@@ -11,6 +11,7 @@ const ContactUs: React.FC = () => {
               src="../title/ig_button.png"
               alt="Instagram button"
               className="h-8 md:h-12 lg:h-20 align-start hover:rotate-12 transition-all"
+              loading="lazy"
             />
           </a>
           <a
@@ -21,6 +22,7 @@ const ContactUs: React.FC = () => {
               src="../title/mail_button.png"
               alt="Mail button"
               className="h-10 md:h-16 lg:h-28 hover:rotate-12 transition-all"
+              loading="lazy"
             />
           </a>
           <a href="https://t.me/ideate2024announcement" target="_blank">
@@ -28,6 +30,7 @@ const ContactUs: React.FC = () => {
               src="../title/telegram_icon.png"
               alt="Telegarm button"
               className="h-10 md:h-16 lg:h-20 hover:rotate-12 transition-all"
+              loading="lazy"
             />
           </a>
         </div>
