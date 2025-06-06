@@ -4,7 +4,7 @@ const TempPage: React.FC = () => {
     return (
         <div className="relative w-full h-full overflow-hidden"> 
             <img 
-                src="/full_bg_1920.png"
+                src="../src/assets/full_bg_1920.png"
                 className="absolute top-0 left-0 w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-opacity-50 flex flex-col items-center justify-center text-white text-center px-4">
