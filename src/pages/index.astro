@@ -3,6 +3,7 @@ import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/header/Header';
 import Router from '../components/Router';
+import TempPage from '../components/TempPage';
 
 import Hero from '../components/hero/Hero';
 import Intro from '../components/intro/Intro';
@@ -26,7 +27,7 @@ import ContactUs from '../components/contactUs/ContactUs';
 ---
 
 <Layout>
-	<Header client:load /> 
+	<!-- <Header client:load /> 
 	<main class="items-center justify-center px-6 lg:px-12 mt-20 text-center text-black text-base w-screen h-screen">
 		<Router client:only="react"/>
       <div class="bg-gray-700/30 rounded-xl p-8 text-center w-full shadow-lg">
@@ -79,5 +80,6 @@ import ContactUs from '../components/contactUs/ContactUs';
 			<ContactUs />
 		</section>
 	  </div>
-	</main>	
+	</main>	 -->
+	<TempPage />
 </Layout>
