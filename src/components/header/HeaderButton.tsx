@@ -1,23 +1,19 @@
 import React from 'react';
-import { Link } from 'react-scroll';
+// import { Link } from 'react-scroll';
 
 type ButtonProps = {
   buttonName: string;
-  buttonId: string;
+  route: string;
   onClick: () => void;
 };
 
-const HeaderButton: React.FC<ButtonProps> = ({ buttonName, buttonId, onClick}) => {
+const HeaderButton: React.FC<ButtonProps> = ({ buttonName, route, onClick}) => {
   return (
-    <div className="rounded-md text-xs md:text-sm lg:text-base xl:text-lg text-center uppercase" onClick={onClick}>
-      <Link
-        to={buttonId}
-        smooth={true}
-        duration={1000}
-        className="cursor-pointer px-1 py-1 hover:bg-gray-700 rounded transition duration-300"
-      >
+    <div className="rounded-md text-xs md:text-sm lg:text-base xl:text-lg text-center uppercase
+    cursor-pointer px-1 py-1 hover:bg-gray-700 transition" onClick={onClick}>
+      <a href= {route}>
         {buttonName}
-      </Link>
+      </a>
     </div>
   );
 };
