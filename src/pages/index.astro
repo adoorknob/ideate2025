@@ -1,41 +1,29 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/header/Header';
-import Router from '../components/Router';
-import TempPage from '../components/TempPage';
 
 import Hero from '../components/hero/Hero';
-import Intro from '../components/intro/Intro';
 import WhatIsIdeate from '../components/whatIsIdeate/WhatIsIdeate';
 import Sponsor from '../components/sponsor/Sponsor';
 import Theme from '../components/theme/Theme';
 import Judges from '../components/judges/Judges';
 import Mentors from '../components/mentors/Mentors';
 import Prizes from '../components/prizes/Prizes';
-import Timeline from '../components/timeline/Timeline';
-import OpeningDay from '../components/openingDay/OpeningDay';
-import SemisAndFinals from '../components/semisAndFinals/SemisAndFinals';
-import Workshops from '../components/workshops/Workshops';
-import Venue from '../components/venue/Venue';
-import FAQ from '../components/faq/FAQ';
+
 import RegisterNow from '../components/registerNow/RegisterNow';
-import ContactUs from '../components/contactUs/ContactUs';
+
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<!-- <Header client:load /> 
-	<main class="items-center justify-center px-6 lg:px-12 mt-20 text-center text-black text-base w-screen h-screen">
-		<Router client:only="react"/>
+	<main class="items-center justify-center px-6 lg:px-12 mt-20 text-center text-black text-base w-screen">
       <div class="bg-gray-700/30 rounded-xl p-8 text-center w-full shadow-lg">
 		<section id="hero">
 			<Hero />
 		</section>
-		<section id="intro">
-			<Intro />
+		<section id="register-now">
+			<RegisterNow />
 		</section>
 		<section id="what-is-ideate">
 			<WhatIsIdeate />
@@ -55,31 +43,7 @@ import ContactUs from '../components/contactUs/ContactUs';
 		<section id="prizes">
 			<Prizes />
 		</section>
-		<section id="timeline">
-			<Timeline client:load/>
-		</section>
-		<section id="opening-day">
-			<OpeningDay />
-		</section>
-		<section id="semis-and-finals">
-			<SemisAndFinals />
-		</section>
-		<section id="workshops">
-			<Workshops client:load/>
-		</section>
-		<section id="venue">
-			<Venue />
-		</section>
-		<section id="faq">
-			<FAQ client:load/>
-		</section>
-		<section id="register-now">
-			<RegisterNow />
-		</section>
-		<section id="contact-us">
-			<ContactUs />
-		</section>
 	  </div>
-	</main>	 -->
-	<TempPage />
+	</main>
+	<!-- <TempPage /> -->
 </Layout>

@@ -43,19 +43,13 @@ const Header: React.FC = () => {
             isSidebarOpen && "flex-col flex w-full"
           )}
         >
-          <HeaderButton buttonName="Home" buttonId="hero" onClick={turnOffSidebar}/>
-          <HeaderButton buttonName="About" buttonId="what-is-ideate" onClick={turnOffSidebar}/>
-          <HeaderButton buttonName="Sponsors" buttonId="sponsor" onClick={turnOffSidebar}/>
-          <HeaderButton buttonName="Theme" buttonId="theme" onClick={turnOffSidebar}/>
-          <HeaderButton buttonName="Judges" buttonId="judges" onClick={turnOffSidebar}/>
-          <HeaderButton buttonName="Mentors" buttonId="mentors" onClick={turnOffSidebar}/>
-          <HeaderButton buttonName="Prizes" buttonId="prizes" onClick={turnOffSidebar}/>
-          <HeaderButton buttonName="Timeline" buttonId="timeline2" onClick={turnOffSidebar}/>
-          <HeaderButton buttonName="Workshops" buttonId="workshops" onClick={turnOffSidebar}/>
-          <HeaderButton buttonName="Venue" buttonId="venue" onClick={turnOffSidebar}/>
-          <HeaderButton buttonName="FAQ" buttonId="faq" onClick={turnOffSidebar}/>
-          <HeaderButton buttonName="Register" buttonId="register-now" onClick={turnOffSidebar}/>
-          <HeaderButton buttonName="Contact Us" buttonId="contact-us" onClick={turnOffSidebar}/>
+          {/* Routing done by putting url in route */}
+          <HeaderButton buttonName="Home" route="/" onClick={turnOffSidebar}/>
+          <HeaderButton buttonName="About" route="/about" onClick={turnOffSidebar}/>
+          <HeaderButton buttonName="Schedule" route="/schedule" onClick={turnOffSidebar}/>
+          <HeaderButton buttonName="FAQ" route="/faq" onClick={turnOffSidebar}/>        
+          <HeaderButton buttonName="Submissions" route="/submissions" onClick={turnOffSidebar}/>  
+          <HeaderButton buttonName="Resources" route="/resources" onClick={turnOffSidebar}/>  
         </nav>
       </div>
     </header>
