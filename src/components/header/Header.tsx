@@ -39,8 +39,8 @@ const Header: React.FC = () => {
         </button>
         <nav
           className={twMerge(
-            "overflow hidden lg:flex gap-4 mt-4 md:mt-0 content-center md:mx-auto",
-            isSidebarOpen && "flex-col flex w-full"
+            "overflow hidden lg:flex gap-4 mt-4 md:mt-0 content-center justify-end w-full md:mx-auto",
+            isSidebarOpen && "flex-col flex"
           )}
         >
           {/* Routing done by putting url in route */}
