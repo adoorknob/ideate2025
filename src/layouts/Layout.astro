@@ -2,7 +2,15 @@
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import { ClientRouter, fade } from "astro:transitions";
-import '@fontsource/poppins';
+import '@fontsource/poppins/100';
+import '@fontsource/poppins/200';
+import '@fontsource/poppins/300';
+import '@fontsource/poppins/400';
+import '@fontsource/poppins/500';
+import '@fontsource/poppins/600';
+import '@fontsource/poppins/700';
+import '@fontsource/poppins/800';
+import '@fontsource/poppins/900';
 import './src/styles/global.css';
 ---
 <!doctype html>
@@ -10,13 +18,13 @@ import './src/styles/global.css';
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<link rel="icon" type="image/svg+xml" href="/bulb_favicon.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>IDEATE 2025</title>
 		<ClientRouter transition:animate="none"/>
 	</head>
 	<body class="min-h-screen flex flex-col">
-		<Header/> 
+		<Header client:load/> 
 		<main class="flex-grow">
 			<slot />
 		</main>
@@ -30,7 +38,8 @@ import './src/styles/global.css';
 		margin: 0;
 		width: 100%;
 		height: 100%;
-		background-image: url('/src/assets/temp_bg.png');
+		/* background-image: url('/src/assets/temp_bg.png'); */
+		background-color: #283BBB;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		background-position: center 0px;

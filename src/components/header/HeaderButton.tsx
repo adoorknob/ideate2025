@@ -9,8 +9,8 @@ type ButtonProps = {
 
 const HeaderButton: React.FC<ButtonProps> = ({ buttonName, route, onClick}) => {
   return (
-    <div className="rounded-md text-xs md:text-sm lg:text-base xl:text-lg text-center uppercase
-    cursor-pointer px-1 py-1 hover:bg-gray-700 transition" onClick={onClick}>
+    <div className="rounded-md px-2 text-xs md:text-sm lg:text-base xl:text-lg text-center uppercase
+    cursor-pointer px-1 py-1 hover:bg-zinc-700/75 transition" onClick={onClick}>
       <a href= {route}>
         {buttonName}
       </a>
