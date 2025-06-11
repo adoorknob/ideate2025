@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import HeaderButton from "./HeaderButton"; // Correct import for HeaderButton
 import { twMerge } from "tailwind-merge";
+import HeaderLogo from "./HeaderLogo";
 
 const Header: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -16,7 +17,7 @@ const Header: React.FC = () => {
   }
 
   return (
-    <header className={twMerge("fixed top-0 left-0 w-full bg-gray-800 text-white p-4 flex justify-between items-center z-50 transition-all")}>
+    <header className={twMerge("fixed top-0 left-0 w-full bg-zinc-800 text-white font-extrabold p-4 flex justify-between items-center z-50 transition-all")}>
       <div className={twMerge("flex items-center w-full",isSidebarOpen && 'flex-col')}>
         <button
           className={twMerge("text-white focus:outline-none w-full lg:hidden")}
@@ -37,6 +38,9 @@ const Header: React.FC = () => {
             />
           </svg>
         </button>
+        <div className={twMerge("invisible lg:visible")}>
+          <HeaderLogo />
+        </div>
         <nav
           className={twMerge(
             "overflow hidden lg:flex gap-4 mt-4 md:mt-0 content-center justify-end w-full md:mx-auto",
