@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactUs: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-x-4 text-2xl lg:text-7xl lg:pt-16 pt-8 min-h-[50vh] px-4 lg:px-8">
+    <div className="flex flex-col items-center justify-center gap-x-4 text-2xl lg:text-7xl lg:pt-16 pt-8 min-h-[50vh] px-4 lg:px-8 text-white">
       <p className="uppercase pb-4">Contact Us</p>
       <div className="flex flex-col items-center justify-center">
         <div className="flex items-center gap-x-4">
@@ -25,7 +25,7 @@ const ContactUs: React.FC = () => {
               loading="lazy"
             />
           </a>
-          <a href="https://t.me/ideate2024announcement" target="_blank">
+          <a href="https://t.me/ideate2025" target="_blank">
             <img
               src="../title/telegram_icon.png"
               alt="Telegarm button"
