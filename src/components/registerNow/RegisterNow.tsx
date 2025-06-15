@@ -10,7 +10,7 @@ const RegisterNow: React.FC<RegisterNowProps> = ({ isRegistrationOpen }) => {
 
     return (
         <div className="relative bg-inherit flex items-center justify-center text-black text-base h-screen">
-            <div className="w-full">
+            <div className="w-full h-auto">
                 <img 
                     src={ isRegistrationOpen ? "../register_now/text_open.png" : "../register_now/text_opensSoon.png"}
                     className={`absolute top-10 -translate-x-1/2 ${ isRegistrationOpen ? `left-1/3 w-[50vw]`: `left-2/5 w-[60vw]`} h-auto`}
