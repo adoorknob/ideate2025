@@ -6,18 +6,18 @@ const Prizes: React.FC = () => {
             <div className="text-7xl font-extrabold">
                 prizes:
             </div>
-            <div className="grid grid-cols-3 place-content-center">
+            <div className="grid grid-cols-3 place-content-center h-100">
                 <img 
                     src="../prizes/amongsemis_label_text.png"
-                    className="w-[50vw] justify-self-center"
+                    className="w-[50vw] justify-self-center self-center"
                 />
                 <img 
                     src="../prizes/best_exhibition.png"
-                    className="w-[25vw] justify-self-center"
+                    className="w-[20vw] justify-self-center self-start"
                 />
                 <img 
                     src="../prizes/most_sustainable.png"
-                    className="w-[25vw] justify-self-center"
+                    className="w-[20vw] justify-self-center self-end"
                 />
             </div>
         </div>
