@@ -26,6 +26,8 @@ const Sponsor: React.FC = () => {
                         className="w-[10vw] m-5 justify-self-center col-span-2"
                     />
                 </div>
+            </div>
+            <div className="uppercase font-bold m-20">
                 <div className="flex relative text-7xl text-left w-full h-35 my-5">
                     <div>
                         supported
