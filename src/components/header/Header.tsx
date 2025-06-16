@@ -52,8 +52,8 @@ const Header: React.FC = () => {
           <HeaderButton buttonName="About" route="/about" onClick={turnOffSidebar}/>
           <HeaderButton buttonName="Schedule" route="/schedule" onClick={turnOffSidebar}/>
           <HeaderButton buttonName="FAQ" route="/faq" onClick={turnOffSidebar}/>        
-          <HeaderButton buttonName="Submissions" route="/submissions" onClick={turnOffSidebar}/>  
-          <HeaderButton buttonName="Resources" route="/resources" onClick={turnOffSidebar}/>  
+          {/* <HeaderButton buttonName="Submissions" route="/submissions" onClick={turnOffSidebar}/>  
+          <HeaderButton buttonName="Resources" route="/resources" onClick={turnOffSidebar}/>   */}
         </nav>
       </div>
     </header>
