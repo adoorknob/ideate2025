@@ -8,17 +8,34 @@ const WhatIsIdeate: React.FC = () => {
                 <TitleText />
             </div>
             <div className="w-full px-20 grid grid-cols-3 gap-4 gap-y-10">
+                <div className="col-span-2 text-2xl text-left">
+                    <p className="text-justify">
+                        IDEATE isn’t just a competition—it’s a launchpad for mechatronic solutions with real-world potential.
+                        <br />
+                        <br />
+                        Open to all disciplines, this challenge brings together passionate teams who dare to imagine, build, and solve. 
+                        IDEATE offers the freedom to innovate for practical applications. You bring the idea—we provide the space to explore it, 
+                        question it, build it, and bring it to life.
+                    </p>
+                </div>
+                <div className="relative grid">
+                    <img
+                        src="../whatIsIdeate/balancing.png"
+                        className="absolute w-[10vw] -translate-y-1/5 justify-self-center"
+                    />
+                </div>
+                <div className="content-center">
+                    <img
+                        src="../whatIsIdeate/people.png"
+                        className="w-[25vw]"
+                    />
+                </div>
                 <div className="col-span-2 text-3xl text-left">
-                    blah blah blah history of ideate blah blah blah history of ideate blah blah blah history of ideate
-                </div>
-                <div className="bg-zinc-700 content-center">
-                    insert some image
-                </div>
-                <div className="bg-zinc-700 content-center">
-                    insert some image
-                </div>
-                <div className="col-span-2 text-3xl text-left">
-                    blah blah blah history of ideate blah blah blah history of ideate blah blah blah history of ideate
+                    Expect brainstorming sessions, rapid prototyping, hands-on mentorship, and the thrill of seeing your concept evolve into 
+                    something real. 
+                    <br />
+                    <br />
+                    IDEATE is where raw ideas meet bold execution.
                 </div>
             </div>
         </div>
