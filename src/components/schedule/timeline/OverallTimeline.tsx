@@ -1,7 +1,7 @@
 import React from "react";
 import TimelineItem from "./TimelineItem";
 
-const WhatIsIdeate: React.FC = () => {
+const OverallTimeline: React.FC = () => {
   return (
     <div className="flex flex-col items-center text-2xl lg:text-7xl lg:pt-24 pt-16 px-4 lg:px-16 leading-tight">
       <p className="uppercase pb-8 lg:pb-16 align-middle mx-auto">
@@ -45,4 +45,4 @@ const WhatIsIdeate: React.FC = () => {
   )
 };
 
-export default WhatIsIdeate;
+export default OverallTimeline;

@@ -25,7 +25,7 @@ const getShape = (id: number): string => {
 const pickShape = (item: Activity) => {
     const shape = getShape(item.id);
     const color = item.color??'white'; // 'red', 'blue', etc.
-    return `/src/components/timeline/${color}_${shape}.png`
+    return `/src/components/schedule/timeline/${color}_${shape}.png`
 }
 
 

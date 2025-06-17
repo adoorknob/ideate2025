@@ -19,7 +19,7 @@ const getShape = (id: number): string => {
 const pickShape = (item: Event) => {
     const shape = getShape(item.id);
     const color = item.color??'white'; // 'red', 'blue', etc.
-    return `/src/components/timeline/${color}_${shape}.png`
+    return `/src/components/schedule/timeline/${color}_${shape}.png`
 }
 
 const events: Event[] = data;
