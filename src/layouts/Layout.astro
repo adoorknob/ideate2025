@@ -1,7 +1,8 @@
 ---
 import Header from '../components/layout/header/Header';
 import Footer from '../components/layout/footer/Footer';
-import { ClientRouter, fade } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
+import '@fontsource/peace-sans';
 import '@fontsource/poppins/100';
 import '@fontsource/poppins/200';
 import '@fontsource/poppins/300';
@@ -70,5 +71,9 @@ import '/src/styles/global.css';
 			-2px 0 0 #1C34D4,
 			0 -2px 0 #1C34D4,
 			0 2px 0 #1C34D4;
+	}
+
+	.font-peacesans {
+		font-family: "Peace Sans", sans-serif;
 	}
 </style>

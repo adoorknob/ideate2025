@@ -1,10 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Intro from '../components/about/intro/Intro';
+import Ideate2024 from '../components/about/ideate2024';
 ---
 
 <Layout>
     <section id="intro">
+        <Ideate2024 client:load/>
         <Intro />
     </section>
 </Layout>
