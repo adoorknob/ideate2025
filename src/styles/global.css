@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+.outlined-text {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  font-weight: 900;
+}

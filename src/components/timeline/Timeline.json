@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "date": "17 Aug 2024",
+      "description": "Opening Day"
+    },
+    {
+      "id": 2,
+      "date": "Week 1 - Week 2",
+      "description": "Workshops"
+    },
+    {
+      "id": 3,
+      "date": "31 Aug 2024",
+      "description": "Preliminary Design Review"
+    },
+    {
+      "id": 4,
+      "date": "Week ? - Week ?",
+      "description": "Semi-finals and Finals",
+      "color":"yellow"
+    }
+]
+  
