@@ -1,11 +1,14 @@
 import React from "react"
+import OpeningDay from "./OpeningDay_2"
+import OverallTimeline from "./OverallTimeline"
 
 const Timeline: React.FC = () => {
     return (
-        <div className="bg-inherit flex items-center justify-center text-black text-base h-screen">
-            <div className="rounded-md p-5 text-center bg-gray-300">
-                Timeline
-            </div>
+        <div className="bg-inherit flex flex-col items-center justify-center text-white text-base">
+            <OverallTimeline />
+            <section id='opening-day'>
+                <OpeningDay />
+            </section>
         </div>
     )
 }

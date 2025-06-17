@@ -49,4 +49,26 @@ import '/src/styles/global.css';
 		background-size: cover;
 		font-family: 'Poppins', Helvetica, sans-serif;
 	}
+
+	.white-text-outline {
+		text-shadow: 
+			1px 1px 0 white, 
+			-1px -1px 0 white,
+			1px -1px 0 white,
+			-1px 1px white;
+	}
+	
+	.blue-text-outline {
+		-webkit-text-stroke: 2px #1C34D4; /* Outline with 2px black stroke */
+        text-stroke: 2px #1C34D4; /* Fallback for other browsers */
+		text-shadow: 
+			2px 2px 0 y, 
+			-2px -2px 0 #1C34D4,
+			2px -2px 0 #1C34D4,
+			-2px 2px #1C34D4,
+			2px 0 0 #1C34D4, 
+			-2px 0 0 #1C34D4,
+			0 -2px 0 #1C34D4,
+			0 2px 0 #1C34D4;
+	}
 </style>
