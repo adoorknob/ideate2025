@@ -3,14 +3,14 @@ import React from "react"
 const Prizes: React.FC = () => {
     return (
         <div className="bg-inherit flex flex-col items-center justify-center text-white uppercase text-base">
-            <div className="text-7xl font-extrabold">
+            <div className="text-3xl md:text-5xl lg:text-7xl font-extrabold">
                 prizes:
             </div>
             {/* consolation */}
-            <div className="grid grid-cols-3 place-content-center m-10">
+            <div className="flex flex-col md:grid md:grid-cols-3 place-content-center items-center m-10">
                 <img 
                     src="../prizes/amongsemis_label_text.png"
-                    className="w-[50vw] justify-self-center self-center"
+                    className="w-[40vw] md:w-[50vw] justify-self-center self-center"
                 />
                 <img 
                     src="../prizes/best_exhibition.png"
