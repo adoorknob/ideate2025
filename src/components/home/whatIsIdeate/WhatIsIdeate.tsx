@@ -4,7 +4,7 @@ import TitleText from "./title_text"
 const WhatIsIdeate: React.FC = () => {
     return (
         <div className="bg-inherit flex flex-col items-center text-white justify-center w-full text-base">
-            <div className="relative w-full px-20 h-20 md:h-35 lg:h-48">
+            <div className="relative w-full px-20 h-28 md:h-40 lg:h-48">
                 <TitleText />
             </div>
             <div className="w-full px-20 md:grid md:grid-cols-3 gap-4 gap-y-10">
