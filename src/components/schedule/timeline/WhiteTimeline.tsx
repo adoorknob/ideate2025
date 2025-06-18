@@ -5,10 +5,9 @@ export interface Activity {
     timeStart: string;
     timeEnd: string;
     description: string;
-    color?:shapeColor
+    color?:'red' | 'green' | 'yellow';
 };
 
-export type shapeColor = 'red' | 'green' | 'yellow';
 
 type timelineProps = {
   name: string;

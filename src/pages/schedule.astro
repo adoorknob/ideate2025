@@ -4,11 +4,13 @@ import Timeline from '../components/schedule/timeline/Timeline';
 import Workshops from '../components/schedule/workshops/Workshops';
 import Venue from '../components/schedule/venue/Venue';
 import OpeningDay from '../components/schedule/timeline/OpeningDay';
+import OverallTimeline from "@/components/schedule/timeline/OverallTimeline";
 ---
 
 <Layout>
     <section id="timeline">
-        <Timeline client:load/>
+        <!-- <Timeline client:load/> -->
+        <OverallTimeline client:load/>
     </section>
     <section id="venue">
         <Venue />
