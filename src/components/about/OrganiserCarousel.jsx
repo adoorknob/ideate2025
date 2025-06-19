@@ -12,7 +12,7 @@ const images = [
   "../info/ideate2024/organising_team/booth.jpg",
   "../info/ideate2024/organising_team/pre_event.png",
   "../info/ideate2024/organising_team/pre_event_2.png",
-  "../info/ideate2024/organising_team/media.png",
+  "../info/ideate2024/organising_team/media.png"
 ];
 
 export function OrganiserCarousel() {
