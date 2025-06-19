@@ -5,24 +5,45 @@ interface Event {
     date: string;
     description: string;
     color?:string
+    link?: string | null;
 };
 
 // type shapeColor = 'red' | 'green' | 'yellow';
 
-const getShape = (id: number): string => {
-  const mod = id % 3;
-  if (mod === 1) return 'circle';
-  if (mod === 2) return 'triangle';
-  return 'square';
-};
+// const events: Event[] = data;
 
-const pickShape = (item: Event) => {
-    const shape = getShape(item.id);
-    const color = item.color??'white'; // 'red', 'blue', etc.
-    return `/src/components/schedule/timeline/${color}_${shape}.png`
-}
+const timelineData = [
+  {
+    title: 'Opening Day',
+    date: '17 Aug 2024',
+    color: true,
+    link: 'opening-day',
+  },
+  {
+    title: 'Workshops',
+    date: 'Week 1 - Week 2',
+    shape: 'triangle',
+    link: 'workshops',
+  },
+  {
+    title: 'Preliminary Design Review',
+    date: '30 Aug 2024',
+    shape: 'square',
+  },
+  {
+    title: (
+      <span className="text-sm xs:text-xl sm:text-3xl lg:text-5xl">
+        <span className="whitespace-nowrap">Semi-Finals </span> 
+        <span className="text-xs lg:text-3xl">and </span> 
+        Finals
+      </span>
+    ),
+    date: '21 Sep 2024',
+    shape: 'circle',
+    link: 'semis-and-finals',
+  },
+];
 
-const events: Event[] = data;
 
 
 const Timeline = () => {
@@ -36,16 +57,16 @@ const Timeline = () => {
             <div className="relative flex flex-col items-center justify-center">
                 <div className="absolute h-full left-1/2 transform -translate-x-1/2 w-1 bg-white rounded-md z-20" />
                 <div className="font-poppins w-3/4 z-30">
-                    {events.map(item => (
-                        <div key={item.id} className="h-16 grid grid-cols-5 m-20">
+                    {timelineData.map((item, index) => (
+                        <div key={index} className="h-16 grid grid-cols-5 m-20">
                             {
-                                (item.id % 2 == 1) ? (  
+                                (index % 2 == 1) ? (  
                                 <div className=" col-span-2 flex flex-col justify-center w-full text-base xs:text-sm lg:text-2xl uppercase">
                                     <p className="outlined-text">
                                         {item.date}
                                     </p>
                                     <p className="col-span-2 text-base lg:text-3xl flex items-center leading-none">
-                                        {item.description}
+                                        {item.title}
                                     </p>    
                                 </div>
                                 ) : (
@@ -57,7 +78,7 @@ const Timeline = () => {
                             <div className="col-span-1 flex items-center justify-center">
                             {
                                 <img
-                                    src={pickShape(item)}
+                                    src={pickShape(item, index)}
                                     alt='Timeline Shape'
                                     className='w-3 h-3 lg:w-6 lg:h-6 object-contain'
                                 />
@@ -65,13 +86,13 @@ const Timeline = () => {
                             </div>
 
                             {
-                                (item.id % 2 == 0) ? (  
+                                (index % 2 == 0) ? (  
                                 <div className=" col-span-2 flex flex-col justify-center w-full text-base xs:text-sm lg:text-2xl uppercase">
                                     <p className="outlined-text">
                                         {item.date}
                                     </p>
                                     <p className="col-span-2 text-base xs:text-sm lg:text-3xl flex items-center">
-                                        {item.description}
+                                        {item.title}
                                     </p>    
                                 </div>
                                 ) : (
