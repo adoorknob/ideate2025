@@ -54,7 +54,7 @@ const OverallTimeline: React.FC = () => {
       </p>
       <div className="relative flex items-center justify-center">
           <div className="absolute h-full left-1/2 transform -translate-x-1/2 w-1 bg-white rounded-md z-10" />  
-          <div className="font-poppins w-3/4">
+          <div className="font-poppins w-4/5">
           {timelineData.map((item, index) => (
             <div key={index}>
               {

@@ -17,7 +17,8 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ title, date, shape, link, p
   const isLeft = position === 'left';
 
   const content = (
-    <div className="group grid grid-cols-3 w-full h-32 lg:h-56 rounded transition duration-300 hover:bg-gray-800 
+    // <div className="flex justify-center">
+    <div className="group grid grid-cols-[minmax(0,1fr)_15%_minmax(0,1fr)] w-full h-32 lg:h-56 rounded transition duration-300 hover:bg-gray-800 
     text-sm xs:text-xl sm:text-3xl lg:text-5xl">
       <div className={`${isLeft ? 'order-1' : 'order-3'} col-span-1 flex flex-col justify-center px-4`}>
         <p className="outlined-text">{date}</p>
@@ -40,6 +41,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ title, date, shape, link, p
         </p>
       </div>
     </div>
+    // </div>
   );
   
 
