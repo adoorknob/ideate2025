@@ -48,8 +48,8 @@ const timelineData = [
 const OverallTimeline: React.FC = () => {
   
   return (
-    <div className="flex flex-col items-center text-2xl lg:text-7xl lg:pt-24 pt-16 px-4 lg:px-16 leading-tight text-white font-extrabold">
-      <p className="uppercase pb-8 lg:pb-16 align-middle mx-auto">
+    <div className="flex flex-col items-center text-2xl pt-16 px-4 lg:px-16 leading-tight text-white font-extrabold">
+      <p className="lg:text-7xl lg:pt-24 uppercase pb-8 lg:pb-16 align-middle mx-auto">
         What to Expect
       </p>
       <div className="relative flex items-center justify-center">

@@ -22,7 +22,7 @@
       "timeStart": "1130",
       "timeEnd": "1230",
       "description": "Lunch and Networking",
-      "color":"yellow"
+      "color":true
     },
     {
       "id": 5,

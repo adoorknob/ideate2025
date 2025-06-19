@@ -7,15 +7,18 @@ type TimelineItemProps = {
   link?: string | null;
   shape: "circle" | "triangle" | "square";
   position: "left" | "right";
+  descriptionHeader?:React.ReactNode;
+  descriptionContent?:React.ReactNode;
 };
 
-const TimelineItem: React.FC<TimelineItemProps> = ({ title, date, shape, link, position }) => {
+const TimelineItem: React.FC<TimelineItemProps> = ({ title, date, shape, link, position, descriptionHeader, descriptionContent }) => {
   const markerSource = `../timeline/timeline_${shape}.png`;
   const markerName = `Timeline ${shape}`;
   const isLeft = position === 'left';
 
   const content = (
-    <div className="group grid grid-cols-3 w-full h-32 lg:h-56 rounded transition duration-300 hover:bg-gray-800 overflow-hidden">
+    <div className="group grid grid-cols-3 w-full h-32 lg:h-56 rounded transition duration-300 hover:bg-gray-800 
+    text-sm xs:text-xl sm:text-3xl lg:text-5xl">
       <div className={`${isLeft ? 'order-1' : 'order-3'} col-span-1 flex flex-col justify-center px-4`}>
         <p className="outlined-text">{date}</p>
         <p>{title}</p>
@@ -31,9 +34,9 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ title, date, shape, link, p
       {/* Description revealed on hover */}
       <div className={`${isLeft ? 'order-3' : 'order-1'}
       col-span-1 px-4 py-2 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 translate-x-4 group-hover:translate-x-0`}>
-        <h4 className="text-sm font-semibold">Detailed Description</h4>
+        <h4 className="text-sm font-semibold">{descriptionHeader}</h4>
         <p className="text-sm text-muted-foreground mt-1">
-          This is the additional information shown when hovering.
+          {descriptionContent}
         </p>
       </div>
     </div>

@@ -5,7 +5,7 @@ export interface Activity {
     timeStart: string;
     timeEnd: string;
     description: string;
-    color?:'red' | 'green' | 'yellow';
+    color?:boolean;
 };
 
 
@@ -23,13 +23,13 @@ const getShape = (id: number): string => {
 
 const pickShape = (item: Activity) => {
     const shape = getShape(item.id);
-    const color = item.color??'white'; // 'red', 'blue', etc.
+    const color = item.color?'color':'white'; // 'red', 'blue', etc.
     return `/src/components/schedule/timeline/${color}_${shape}.png`
 }
 
 
 
-const WhiteTimeline = ({ name, activities }: timelineProps) => {
+const EventTimeline = ({ name, activities }: timelineProps) => {
 
 
     return (
@@ -66,4 +66,4 @@ const WhiteTimeline = ({ name, activities }: timelineProps) => {
     );
 };
 
-export default WhiteTimeline;
+export default EventTimeline;
