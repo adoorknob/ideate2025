@@ -8,31 +8,18 @@ import {
 
 const faqData = [
   {
-    question: "Is it accessible?",
+    question: "Who can participate in IDEATE 2025?",
     answer: (
       <span>
-        Yes. It adheres to the{" "}
-        <a
-          href="https://www.w3.org/WAI/ARIA/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-600 underline hover:text-blue-800"
-        >
-          WAI-ARIA design pattern
-        </a>
-        .
+        IDEATE 2025 is open to University students from all disciplines and years of study.
       </span>
     ),
   },
   {
-    question: "Can I use it in React?",
+    question: "Do I have to be from Engineering/iDP to join?",
     answer: (
       <span>
-        Absolutely! It works seamlessly with <strong>React</strong> and{" "}
-        <a href="https://tailwindcss.com" className="text-blue-600 underline">
-          Tailwind CSS
-        </a>
-        .
+        Nope! In fact, we encourage you to form interdisciplinary teams for this makeathon, to maximise your chances in the technical, design and business aspects.
       </span>
     ),
   },
