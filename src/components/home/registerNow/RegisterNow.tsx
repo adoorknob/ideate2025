@@ -22,10 +22,10 @@ const RegisterNow: React.FC<RegisterNowProps> = ({ isRegistrationOpen }) => {
                         className="w-fit h-fit"
                         onMouseEnter={() => setHovered(true)}
                         onMouseLeave={() => setHovered(false)}
-                        href="/about"
+                        href="https://forms.office.com/r/jVt88zsPrV"
                     >
                         <img
-                            src="../register_now/unlit_bulb.png"
+                            src="../register_now/web_reg_button.png"
                             className={`absolute top-15 md:top-10 left-1/2 md:left-2/3 translate-y-1/3 w-[35vw] md:w-[25vw] h-auto`}
                         />
                         <img
