@@ -19,7 +19,7 @@ const Header: React.FC = () => {
   return (
     <header className={twMerge("fixed top-0 left-0 w-full bg-zinc-800 text-white font-extrabold p-4 flex justify-between items-center z-50 transition-all")}>
       <div className={twMerge("flex items-center w-full",isSidebarOpen && 'flex-col')}>
-        <button
+        {/* <button
           className={twMerge("text-white focus:outline-none w-full lg:hidden")}
           onClick={toggleSidebar}
         >
@@ -37,14 +37,15 @@ const Header: React.FC = () => {
               d="M4 6h16M4 12h16M4 18h16"
             />
           </svg>
-        </button>
-        <div className={twMerge("invisible lg:visible")}>
+        </button> */}
+        <div className={twMerge("hidden md:block")}>
           <HeaderLogo />
         </div>
         <nav
           className={twMerge(
-            "overflow hidden lg:flex gap-4 mt-4 md:mt-0 content-center justify-end w-full md:mx-auto",
-            isSidebarOpen && "flex-col flex"
+            // "overflow hidden lg:flex gap-4 mt-4 md:mt-0 content-center justify-end w-full md:mx-auto",
+            "overflow flex gap-3 lg:gap-4 md:mt-0 content-center justify-center md:justify-end w-full md:mx-auto",
+            // isSidebarOpen && "flex-col flex"
           )}
         >
           {/* Routing done by putting url in route */}

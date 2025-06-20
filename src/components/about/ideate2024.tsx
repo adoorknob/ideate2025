@@ -1,48 +1,61 @@
 import React from "react"
-import { CarouselPlugin } from "./Carousel"
+import { EventCarousel } from "./EventCarousel"
 
 const Ideate2024: React.FC = () => {
     return (
-        <div className="flex flex-col items-center justify-center text-white text-base">
+        <div className="flex flex-col items-center justify-center text-white text-base pt-25 px-15 md:px-20 lg:px-50">
+            <div className="relative w-full uppercase text-5xl md:text-6xl lg:text-7xl font-extrabold p-5 h-45">
+                <div>about</div>
+                <div className="absolute top-15 left-29 md:top-18 md:left-33 lg:top-20 lg:left-40">ideate</div>
+            </div>
             {/* old theme */}
-            <div className="flex flex-col items-center justify-center text-2xl lg:text-7xl lg:pt-25 pt-8 min-h-[50vh] pb-12 gap-y-8 px-4 lg:px-8">
-                <div className="uppercase text-4xl font-bold">
-                    <span> 
-                        previously on {" "}
-                        <a 
-                            className="font-peacesans underline hover:text-zinc-200"
-                            href="https://www.ideate2024.xyz"
-                        > 
-                            ideate2024
-                        </a>
-                        ...
-                    </span>
+            <div className="flex flex-col md:flex-row bg-gray-100/10 rounded-xl p-10" >
+                <div className="grid items-center justify-center">
+                    <img 
+                        src="../info/ideate2024/IDEATE_2024.png"
+                        className="hidden md:block w-[7vw]"
+                    />
+                    <img 
+                        src="../info/ideate2024/IDEATE_2024_horizontal.png"
+                        className="md:hidden w-[50vw]"
+                    />
                 </div>
-                <img 
-                src="../oldtheme/full_theme.png" 
-                className='pb-10 w-[60vw]'
-                />
-                <div className="flex gap-x-4 lg:gap-x-16 pr-3">
-                    <img
-                    src="../oldtheme/triangle_block.png"
-                    alt="Triangle Block"
-                    className="h-[19vw] w-[19vw]"
+                <div className="bg-white w-auto h-1 mt-5 mb-6 md:mt-0 md:mb-0 md:w-1 md:h-auto md:ml-6" />
+                <div className="flex flex-col items-center justify-center text-2xl lg:text-7xl 
+                                gap-y-8 px-4 lg:px-8">
+                    <img 
+                        src="../oldtheme/full_theme.png" 
+                        className='w-[50vw] md:w-[40vw]'
                     />
-                    <img
-                    src="../oldtheme/bulb_with_house.png"
-                    alt="Bulb With House"
-                    className="h-[21vw] w-[15vw] mr-4"
-                    />
-                    <img
-                    src="../oldtheme/square_block.png"
-                    alt="Square Block"
-                    className="h-[14.5vw] w-[14.5vw]"
-                    />
+                    <div className="grid grid-cols-3">
+                        <img
+                        src="../oldtheme/triangle_block.png"
+                        alt="Triangle Block"
+                        className="w-[15vw] md:w-[10vw]"
+                        />
+                        <img
+                        src="../oldtheme/bulb_with_house.png"
+                        alt="Bulb With House"
+                        className="w-[12vw] md:w-[8vw] mr-4"
+                        />
+                        <img
+                        src="../oldtheme/square_block.png"
+                        alt="Square Block"
+                        className="w-[12vw] md:w-[8vw]"
+                        />
+                    </div>
                 </div>
             </div>
-            <div className="grid grid-cols-3 p-50">
-                <div className="col-span-2"> some text</div>
-                <CarouselPlugin />
+
+            {/* ideate 2024 info */}
+            <div className="grid md:grid-cols-2 pt-10 gap-15">
+                <div className="col-span-1 text-justify text-lg lg:text-xl"> 
+                    <span className="font-bold">"Innovating the Ordinary: Future Home Edition"</span> was the theme of IDEATE 2024, 
+                    aimed at challenging university students in Singapore to envision and create innovative solutions that enhance
+                    everyday living. The first makerthon in IDEATE's history, IDEATE 2024 garnered over 250 participants, with a
+                    prize pool of $10,000 SGD and incubation at The Hangar.
+                </div>
+                <EventCarousel />
             </div>
         </div>
     )

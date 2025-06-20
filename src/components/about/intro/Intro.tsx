@@ -1,10 +1,46 @@
 import React from "react"
+import { OrganiserCarousel } from "../OrganiserCarousel"
 
 const Intro: React.FC = () => {
     return (
-        <div className="flex items-center justify-center text-black text-base h-screen">
-            <div className="rounded-md p-5 text-center bg-gray-300">
-                Intro
+        <div className="flex flex-col items-center justify-center text-white text-base pt-20 px-15 md:px-20 lg:px-50">
+            <div className="bg-gray-100/10 h-1 w-full mb-15"/>
+
+            <div className="relative text-5xl md:text-6xl lg:text-7xl uppercase font-extrabold w-full h-20">
+                <div>who</div>
+                <div className="absolute top-10 left-4/20 md:top-12 md:left-3/20 lg:top-14 lg:left-1/11 text-nowrap">are we?</div>
+            </div>
+
+            <div className="pt-10 md:pt-15  lg:pt-20 grid md:grid-cols-2">
+                <OrganiserCarousel />
+                <div className="relative text-4xl lg:text-5xl uppercase font-semibold h-10 lg:h-25 m-10 lg:m-20 lg:self-center">
+                    <div className="text-nowrap">
+                        The people
+                    </div>
+                    <div className="absolute text-nowrap top-8 lg:top-10 left-1/3">
+                        who made
+                    </div>
+                    <div className="absolute text-nowrap top-16 lg:top-20 left-1/4">
+                        it happen
+                    </div>
+                </div>
+            </div>
+
+            <div className="mt-10 text-justify">
+                <div className="w-full text-lg lg:text-xl mb-10">
+                    The iDP Students’ Club strives to nurture and develop a vibrant community of aspiring engineers, 
+                    innovators and entrepreneurs in the iDP. We aim to play a vital role in the university experience 
+                    of iDP students through organising events and programmes such as social networking events, professional 
+                    development workshops, internship placements, and publicity campaigns.
+                </div>
+                <div className="w-full text-lg lg:text-xl">
+                    IDEATE is iDPSC's annual flagship hackathon. Following the success of IDEATE 2024, we are honoured to have 
+                    the support of the {" "} 
+                        <a href="https://cde.nus.edu.sg" className="underline font-semibold hover:text-gray-200">College of Design and Engineering (CDE)</a> 
+                    {" "} as well as{" "}  
+                        <a href="https://enterprise.nus.edu.sg" className="underline font-semibold hover:text-gray-200">NUS Enterprise</a> 
+                    {" "} in organising IDEATE 2025, bringing began as a homegrown ideathon to a faculty level makerthon. 
+                </div>
             </div>
         </div>
     )
