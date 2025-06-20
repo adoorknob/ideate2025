@@ -6,6 +6,7 @@ const Venue: React.FC = () => {
             <div className="rounded-md p-5 text-center bg-gray-300">
                 Venue
             </div>
+            <a>https://nusmods.com/venues/LT7A</a>
         </div>
     )
 }

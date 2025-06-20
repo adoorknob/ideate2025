@@ -1,5 +1,6 @@
 import React from "react";
 import TimelineItem from "./TimelineItem";
+import Venue from "../venue/Venue"
 
 //vertical relationship
 
@@ -17,29 +18,59 @@ const timelineData = [
     date: '17 Aug 2024',
     color: true,
     link: 'opening-day',
+    descriptionHeader:'',
+    descriptionContent:(
+      <div className="xs:text-sm md:text-2xl lg:text-3xl">
+        <div className="flex items-center space-x-2 p-2">
+          <img src="../timeline/locationIcon.png"
+          className="w-5 h-5 lg:w-10 lg:h-10 object-contain z-20">
+          </img>
+          <span className="fit-content whitespace-nowrap">NUS Engineering LT7A</span>
+        </div>
+        <div className="flex items-center space-x-2 p-2">
+          <img src="../timeline/schedule.png"
+          className="w-5 h-5 lg:w-10 lg:h-10 object-contain z-20">
+          </img>
+          <span>0945 - 1500</span>
+        </div>
+      </div>
+    )
   },
   {
     title: 'Workshops',
     date: 'Week 1 - Week 2',
     color: true,
-    link: 'workshops',
+    // link: 'workshops',
+    descriptionHeader:null,
+    descriptionContent:(
+      <div>
+        <p className="xs:text-sm md:text-2xl lg:text-3xl ">
+          A series of Entrepreneurship, Design Thinking, and Technical Workshops designed to equip you with the skills bring your ideas to life.
+        </p>
+      </div>
+    )
   },
   {
     title: 'Preliminary Design Review',
     date: '30 Aug 2024',
     color: true,
+    link: null,
+    descriptionHeader:null,
+    descriptionContent:null
   },
   {
     title: (
-      <span>
+      <div>
         <span className="whitespace-nowrap">Semi-Finals </span> 
         <span className="text-xs sm:text-lg">and </span> 
         Finals
-      </span>
+      </div>
     ),
     date: '21 Sep 2024',
     color: true,
-    link: 'semis-and-finals',
+    // link: 'semis-and-finals',
+    descriptionHeader:null,
+    descriptionContent:null
   },
 ];
 
@@ -64,6 +95,8 @@ const OverallTimeline: React.FC = () => {
                   shape= {getShape(index)}
                   link={item.link}
                   position={index % 2 == 1 ? 'left': 'right'}
+                  descriptionHeader={item.descriptionHeader}
+                  descriptionContent={item.descriptionContent}
                 />
               }
             </div>

@@ -33,12 +33,12 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ title, date, shape, link, p
       </div>
 
       {/* Description revealed on hover */}
-      <div className={`${isLeft ? 'order-3' : 'order-1'}
+      <div className={`${isLeft ? 'order-3' : 'order-1'} 
       col-span-1 px-4 py-2 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 translate-x-4 group-hover:translate-x-0`}>
-        <h4 className="text-sm font-semibold">{descriptionHeader}</h4>
-        <p className="text-sm text-muted-foreground mt-1">
+        {/* <div className="xs:text-sm  md:text-2xl lg:text-3xl text-sm font-medium">{descriptionHeader}</div> */}
+        <div className="font-normal mt-1">
           {descriptionContent}
-        </p>
+        </div>
       </div>
     </div>
     // </div>

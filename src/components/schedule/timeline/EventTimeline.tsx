@@ -33,7 +33,8 @@ const EventTimeline = ({ name, activities }: timelineProps) => {
 
 
     return (
-        <div className="flex flex-col items-center justify-center gap-x-4 text-2xl lg:text-7xl lg:pt-16 pt-8 pb-12 min-h-[50vh] gap-y-8 px-4 lg:px-8 text-white font-extrabold">
+        <div className="flex flex-col items-center justify-center gap-x-4 text-2xl lg:text-7xl lg:pt-16 pt-8 pb-12 min-h-[50vh] gap-y-8 px-4
+        lg:px-16 text-white font-extrabold">
             <p className="uppercase pt-20 pb-4 lg:pb-8">
                 {name}
             </p>
