@@ -7,9 +7,11 @@ import tailwindcss from '@tailwindcss/vite';
 
 import vercel from '@astrojs/vercel';
 
+import tunnel from 'astro-tunnel';
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react()],
+  integrations: [react(), tunnel()],
 
   vite: {
     plugins: [
