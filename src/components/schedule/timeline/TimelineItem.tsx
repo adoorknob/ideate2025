@@ -17,14 +17,13 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ title, date, shape, link, p
   const isLeft = position === 'left';
 
   const content = (
-    // <div className="flex justify-center">
-    <div className="group grid grid-cols-[minmax(0,1fr)_15%_minmax(0,1fr)] w-full h-32 lg:h-56 rounded transition duration-300 hover:bg-gray-800 
-    xs:text-xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight">
-      <div className={`${isLeft ? 'order-1' : 'order-3'} col-span-1 flex flex-col justify-center px-4`}>
-        <p className="outlined-text">{date}</p>
+    <div className="group grid grid-cols-[minmax(0,1fr)_15%_minmax(0,1fr)] w-full h-32 lg:h-56 transition duration-300 hover:bg-gray-800/30
+    rounded-xl text-sm sm:text-xl md:text-3xl lg:text-5xl leading-tight">
+      <div className={`${isLeft ? 'order-1' : 'order-3 text-right'} mx-5 col-span-1 grid content-center justify-center px-4`}>
+        <p className="outlined-text text-sm sm:text-base md:text-2xl lg:text-4xl">{date}</p>
         <p>{title}</p>
       </div>
-      <div className="order-2 col-span-1 flex justify-center items-center">
+      <div className="order-2 col-span-1 grid justify-center items-center">
         <img
           src={markerSource}
           alt={markerName}
@@ -34,14 +33,12 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ title, date, shape, link, p
 
       {/* Description revealed on hover */}
       <div className={`${isLeft ? 'order-3' : 'order-1'} 
-      col-span-1 px-4 py-2 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 translate-x-4 group-hover:translate-x-0`}>
-        {/* <div className="xs:text-sm  md:text-2xl lg:text-3xl text-sm font-medium">{descriptionHeader}</div> */}
-        <div className="font-normal mt-1">
+      col-span-1 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 translate-x-4 group-hover:translate-x-0`}>
+        <div className="grid font-normal p-4 content-center justify-center">
           {descriptionContent}
         </div>
       </div>
     </div>
-    // </div>
   );
   
 

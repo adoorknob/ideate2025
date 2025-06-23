@@ -56,7 +56,7 @@ const EventTimeline = ({ name, activities }: timelineProps) => {
                                 />
                             }
                             </div>
-                            <p className="col-span-2 text-base xs:text-sm lg:text-3xl flex items-center">
+                            <p className="col-span-2 font-normal text-base xs:text-sm lg:text-3xl flex items-center">
                                 {item.description}
                             </p>
                         </div>

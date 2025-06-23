@@ -4,7 +4,9 @@ import Venue from "../venue/Venue"
 
 //vertical relationship
 
-const getShape = (id: number): string => {
+type Shape = "triangle" | "circle" | "square";
+
+const getShape = (id: number): Shape => {
   const mod = id % 3;
   if (mod === 1) return 'circle';
   if (mod === 2) return 'triangle';
@@ -20,18 +22,18 @@ const timelineData = [
     link: 'opening-day',
     descriptionHeader:'',
     descriptionContent:(
-      <div className="xs:text-sm md:text-2xl lg:text-3xl">
-        <div className="flex items-center space-x-2 p-2">
+      <div className="grid text-xs sm:text-sm md:text-xl lg:text-2xl m-2 gap-2">
+        <div className="flex items-center space-x-2 md:py-1 lg:py-2">
           <img src="../timeline/locationIcon.png"
           className="w-5 h-5 lg:w-10 lg:h-10 object-contain z-20">
           </img>
-          <span className="fit-content whitespace-nowrap">NUS Engineering LT7A</span>
+          <span className="fit-content leading-4 md:leading-normal md:whitespace-nowrap">NUS Engineering LT7A</span>
         </div>
-        <div className="flex items-center space-x-2 p-2">
+        <div className="flex items-center space-x-2 md:py-1 lg:py-2">
           <img src="../timeline/schedule.png"
           className="w-5 h-5 lg:w-10 lg:h-10 object-contain z-20">
           </img>
-          <span>0945 - 1500</span>
+          <span>0945-500</span>
         </div>
       </div>
     )
@@ -44,14 +46,18 @@ const timelineData = [
     descriptionHeader:null,
     descriptionContent:(
       <div>
-        <p className="xs:text-sm md:text-2xl lg:text-3xl ">
+        <p className="hidden md:block md:text-sm lg:text-xl xl:text-2xl overflow-hidden text-ellipses">
           A series of Entrepreneurship, Design Thinking, and Technical Workshops designed to equip you with the skills bring your ideas to life.
         </p>
       </div>
     )
   },
   {
-    title: 'Preliminary Design Review',
+    title: (
+      <div className="md:leading-7 lg:leading-12">
+        Preliminary Design Review
+      </div>
+    ),
     date: '30 Aug 2024',
     color: true,
     link: null,
