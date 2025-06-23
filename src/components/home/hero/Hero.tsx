@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
         <div className="bg-inherit flex items-center justify-center text-black text-base min-h-screen">
             <img 
                 src="../logo/main_logo.png" 
-                className="w-[50vw] h-auto max-h-[80vh] m-20"
+                className="w-[70vw] md:w-[50vw] h-auto max-h-[80vh] m-20"
             />
         </div>
     )

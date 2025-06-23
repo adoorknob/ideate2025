@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactUs: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-x-4 text-2xl md:text-5xl lg:text-7xl lg:pt-16 pt-8 min-h-[50vh] px-4 lg:px-8 text-white">
+    <div className="flex flex-col items-center justify-center gap-x-4 text-2xl md:text-5xl lg:text-7xl lg:pt-16 pt-8 min-h-[25vh] sm:min-h-[50vh] px-4 lg:px-8 text-white">
       <p className="uppercase font-extrabold pb-4">Contact Us</p>
       <div className="flex flex-col items-center justify-center">
         <div className="flex items-center gap-x-4">

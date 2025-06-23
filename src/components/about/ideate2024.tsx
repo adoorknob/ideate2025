@@ -4,9 +4,9 @@ import { EventCarousel } from "./EventCarousel"
 const Ideate2024: React.FC = () => {
     return (
         <div className="flex flex-col items-center justify-center text-white text-base pt-25 px-15 md:px-20 lg:px-50">
-            <div className="relative w-full uppercase text-5xl md:text-6xl lg:text-7xl font-extrabold p-5 h-45">
+            <div className="relative w-full uppercase text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold p-5 h-25 sm:h-45">
                 <div>about</div>
-                <div className="absolute top-15 left-29 md:top-18 md:left-33 lg:top-20 lg:left-40">ideate</div>
+                <div className="absolute top-11 left-19 sm:top-15 sm:left-29 md:top-18 md:left-33 lg:top-20 lg:left-40">ideate</div>
             </div>
             {/* old theme */}
             <div className="flex flex-col md:flex-row bg-gray-100/10 rounded-xl p-10" >
@@ -49,7 +49,7 @@ const Ideate2024: React.FC = () => {
 
             {/* ideate 2024 info */}
             <div className="grid md:grid-cols-2 pt-10 gap-15">
-                <div className="col-span-1 text-justify text-lg lg:text-xl"> 
+                <div className="col-span-1 text-justify text-sm sm:text-lg lg:text-xl"> 
                     <span className="font-bold">"Innovating the Ordinary: Future Home Edition"</span> was the theme of IDEATE 2024, 
                     aimed at challenging university students in Singapore to envision and create innovative solutions that enhance
                     everyday living. The first makerthon in IDEATE's history, IDEATE 2024 garnered over 250 participants, with a

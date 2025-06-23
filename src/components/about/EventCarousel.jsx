@@ -24,12 +24,12 @@ export function EventCarousel() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full"
+      className="w-full content-center"
     >
       <CarouselContent>
         {images.map((src, index) => (
           <CarouselItem key={index}>
-            <div className="flex aspect-3/2 items-center justify-center rounded-2xl border-3 border-white overflow-hidden">
+            <div className="flex aspect-3/2 content-center justify-center rounded-2xl border-3 border-white overflow-hidden">
               <img
                 src={src}
                 alt={`Carousel Image ${index + 1}`}
@@ -39,8 +39,8 @@ export function EventCarousel() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="hidden md:block"/>
+      <CarouselNext className="hidden md:block"/>
     </Carousel>
   )
 }
