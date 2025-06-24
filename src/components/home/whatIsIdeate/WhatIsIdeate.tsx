@@ -21,7 +21,7 @@ const WhatIsIdeate: React.FC = () => {
                 <div className="relative grid invisible md:visible">
                     <img
                         src="../whatIsIdeate/balancing.png"
-                        className="absolute w-[10vw] lg:-translate-y-1/5 justify-self-center"
+                        className="absolute w-[10vw] lg:-translate-y-1/5 xl:-translate-y-2/5 justify-self-center"
                     />
                 </div>
                 <div className="grid content-center justify-center pt-5 md:p-5 h-auto">

@@ -25,15 +25,15 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ title, date, shape, link, p
         <p>{title}</p>
       </div>
       <div className="relative order-2 col-span-1 grid justify-center items-center">
-        <img
+        {/* <img
           src={markerSource}
           alt={markerName}
           className={`${!hasLink ? 'hidden' : ''} md:hidden absolute justify-self-center w-15 h-15 lg:w-20 lg:h-20 object-contain z-20 animate-ping opacity-75`}
-        />
+        /> */}
         <img
           src={markerSource}
           alt={markerName}
-          className="relative w-15 h-15 lg:w-20 lg:h-20 object-contain z-20"
+          className={`${hasLink ? 'animate-pulse' : 'animate-none'} relative w-15 h-15 lg:w-20 lg:h-20 object-contain z-20`}
         />
       </div>
 
