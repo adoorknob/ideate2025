@@ -36,9 +36,9 @@ const Intro: React.FC = () => {
                 <div className="w-full text-base sm:text-lg lg:text-xl">
                     IDEATE is iDPSC's annual flagship hackathon. Following the success of IDEATE 2024, we are honoured to have 
                     the support of the {" "} 
-                        <a href="https://cde.nus.edu.sg" className="underline font-semibold hover:text-gray-200">College of Design and Engineering (CDE)</a> 
+                        <a href="https://cde.nus.edu.sg" className="underline font-semibold text-blue-300 hover:text-blue-400">College of Design and Engineering (CDE)</a> 
                     {" "} as well as{" "}  
-                        <a href="https://enterprise.nus.edu.sg" className="underline font-semibold hover:text-gray-200">NUS Enterprise</a> 
+                        <a href="https://enterprise.nus.edu.sg" className="underline font-semibold text-blue-300 hover:text-blue-400">NUS Enterprise</a> 
                     {" "} in organising IDEATE 2025, bringing began as a homegrown ideathon to a faculty level makerthon. 
                 </div>
             </div>

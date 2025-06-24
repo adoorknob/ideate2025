@@ -29,7 +29,7 @@ const faqData = [
       <span>
         <a 
             href="https://enterprise.nus.edu.sg/education-programmes/nus-overseas-colleges/" 
-            className="underline hover:text-gray-200 font-semibold">
+            className="underline text-blue-300 hover:text-blue-400 font-semibold">
                 NUS Overseas Colleges (NOC)
         </a> 
         {" "} is an overseas programme that provides experiential learning and entrpreneurship development, with access to

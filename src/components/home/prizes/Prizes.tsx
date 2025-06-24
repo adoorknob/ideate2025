@@ -12,26 +12,22 @@ const Prizes: React.FC = () => {
             <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold uppercase">
                 prizes:
             </div>
-            {/* consolation */}
-            <div className="flex flex-col md:grid md:grid-cols-3 place-content-center items-center md:m-10">
-                <img 
-                    src="../prizes/amongsemis_label_text.png"
-                    className="w-[60vw] md:w-[50vw] mt-6 sm:m-5 justify-self-center"
+
+            {/* top3 */}
+            <div className="grid m-10 justify-center">
+                <img
+                    src="../prizes/top3.png"
+                    className="w-[70vw] md:w-[50vw] justify-self-center"
                 />
-                <div className="md:col-span-2 w-full grid grid-cols-2 p-5">
-                    <div className="w-full grid md:justify-end justify-start">
-                        <img 
-                            src="../prizes/best_exhibition.png"
-                            className="w-[30vw] md:w-[20vw] justify-self-center"
-                        />
-                    </div>
-                    <div className="w-full grid md:justify-start justify-end">
-                        <div className="min-h-[8vw]" />
-                        <img 
-                            src="../prizes/most_sustainable.png"
-                            className="w-[30vw] md:w-[20vw] justify-self-center"
-                        />
-                    </div>
+                <div className="text-sm sm:text-base md:text-lg lg:text-xl mt-3 md:mt-5">
+                    <span>
+                        More information about the {" "}
+                        <a 
+                            className="underline text-blue-300 hover:text-blue-400"
+                            href="https://enterprise.nus.edu.sg/funding/nus-venture-initiation-programme/">
+                            Venture Initiation Programme (VIP) Grant
+                        </a>
+                    </span>
                 </div>
             </div>
 
@@ -63,10 +59,10 @@ const Prizes: React.FC = () => {
                                 <span>
                                     <br/>
                                     <br/>
-                                    Claimable when participants enrol for iDP project courses 
-                                    <a className="underline hover:text-gray-300" href="https://cde.nus.edu.sg/edic/idp/modules/eg3301r/"> {" "} CDE3301</a> or  {" "} 
-                                    <a className="underline hover:text-gray-300" href="https://cde.nus.edu.sg/edic/idp/modules/eg4301/">CDE4301</a>
-                                    <a className="underline hover:text-gray-300" href="https://cde.nus.edu.sg/edic/idp/modules/eg4301a/">/4301A</a>
+                                    Claimable when participants enrol for iDP project courses {" "} 
+                                    <a className="underline text-blue-300 hover:text-blue-400" href="https://cde.nus.edu.sg/edic/idp/modules/eg3301r/"> CDE3301</a> or  {" "} 
+                                    <a className="underline text-blue-300 hover:text-blue-400" href="https://cde.nus.edu.sg/edic/idp/modules/eg4301/">CDE4301</a>
+                                    <a className="underline text-blue-300 hover:text-blue-400" href="https://cde.nus.edu.sg/edic/idp/modules/eg4301a/">/4301A</a>
                                 </span>
                             </div>
                             <div className="rounded-xl bg-gray-100/10 p-3 m-1">
@@ -78,7 +74,7 @@ const Prizes: React.FC = () => {
                                     <br/>
                                     Participants are able to skip the interview process, however embarking on the programme
                                     is also dependent on other factors (procurement of visa, internship, etc.). More details
-                                    are in our <a className="underline hover:text-gray-300" href="/faq">FAQ page</a>.
+                                    are in our <a className="underline text-blue-300 hover:text-blue-400" href="/faq">FAQ page</a>.
                                 </span>
                             </div>
                         </AccordionContent>
@@ -87,21 +83,26 @@ const Prizes: React.FC = () => {
                 </div>
             </div>
 
-            {/* top3 */}
-            <div className="grid m-10 justify-center">
-                <img
-                    src="../prizes/top3.png"
-                    className="w-[70vw] md:w-[50vw] justify-self-center"
+            {/* consolation */}
+            <div className="flex flex-col md:grid md:grid-cols-3 place-content-center items-center md:m-10">
+                <img 
+                    src="../prizes/amongsemis_label_text.png"
+                    className="w-[60vw] md:w-[50vw] mt-6 sm:m-5 justify-self-center"
                 />
-                <div className="text-sm sm:text-base md:text-lg lg:text-xl mt-3 md:mt-5">
-                    <span>
-                        More information about the {" "}
-                        <a 
-                            className="underline hover:text-gray-300"
-                            href="https://enterprise.nus.edu.sg/funding/nus-venture-initiation-programme/">
-                            Venture Initiation Programme (VIP) Grant
-                        </a>
-                    </span>
+                <div className="md:col-span-2 w-full grid grid-cols-2 p-5">
+                    <div className="w-full grid md:justify-end justify-start">
+                        <img 
+                            src="../prizes/best_exhibition.png"
+                            className="w-[30vw] md:w-[20vw] justify-self-center"
+                        />
+                    </div>
+                    <div className="w-full grid md:justify-start justify-end">
+                        <div className="min-h-[8vw]" />
+                        <img 
+                            src="../prizes/most_sustainable.png"
+                            className="w-[30vw] md:w-[20vw] justify-self-center"
+                        />
+                    </div>
                 </div>
             </div>
         </div>

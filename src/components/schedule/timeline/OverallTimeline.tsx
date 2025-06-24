@@ -17,7 +17,7 @@ const getShape = (id: number): Shape => {
 const timelineData = [
   {
     title: 'Opening Day',
-    date: '17 Aug 2024',
+    date: '16 Aug',
     color: true,
     link: 'opening-day',
     descriptionHeader:'',
@@ -40,18 +40,20 @@ const timelineData = [
     hasLink:true,
   },
   {
-    title: 'Workshops',
-    date: 'Week 1 - Week 2',
-    color: true,
-    // link: 'workshops',
-    descriptionHeader:null,
-    descriptionContent:(
+    title: (
       <div>
-        <p className="hidden md:block md:text-sm lg:text-xl xl:text-2xl overflow-hidden text-ellipses">
-          A series of Entrepreneurship, Design Thinking, and Technical Workshops designed to equip you with the skills bring your ideas to life.
-        </p>
+        <div className="text-xs sm:text-base md:text-xl lg:text-2xl">
+          Entrepreneurship
+        </div>
+        <div>
+          Workshop
+        </div>
       </div>
     ),
+    date: '20th Aug',
+    color: true,
+    descriptionHeader:null,
+    descriptionContent:null,
   },
   {
     title: (
@@ -59,11 +61,28 @@ const timelineData = [
         Preliminary Design Review
       </div>
     ),
-    date: '30 Aug 2024',
+    date: '1st Sep',
     color: true,
     link: null,
     descriptionHeader:null,
     descriptionContent:null,
+  },
+  {
+    title: 'Technical Workshops',
+    date: '20th - 28th Sep',
+    descriptionContent: (
+      <div className="hidden md:block md:text-sm xl:text-2xl">
+        A series of Entrepreneurship, Design Thinking, and Technical Workshops designed to equip you with the skills bring your ideas to life.
+      </div>
+    ),
+  },
+  {
+    title: 'Mentor Check-In',
+    date: '29th Sep - 5 Oct',
+  },
+  {
+    title: 'Pitching Workshop',
+    date: '6th Oct',
   },
   {
     title: (
@@ -73,9 +92,8 @@ const timelineData = [
         Finals
       </div>
     ),
-    date: '21 Sep 2024',
+    date: '15th Oct',
     color: true,
-    // link: 'semis-and-finals',
     descriptionHeader:null,
     descriptionContent:null,
   },
