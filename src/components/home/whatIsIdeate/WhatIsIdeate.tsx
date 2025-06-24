@@ -30,7 +30,7 @@ const WhatIsIdeate: React.FC = () => {
                         className="w-[25vw]"
                     />
                 </div>
-                <div className="md:col-span-2 text-lg sm:text-xl md:text-2xl lg:text-3xl text-left">
+                <div className="md:col-span-2 font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl text-left">
                     Expect brainstorming sessions, rapid prototyping, hands-on mentorship, and the thrill of seeing your concept evolve into 
                     something real. 
                     <br />
