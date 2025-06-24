@@ -52,12 +52,17 @@ const faqData = [
     answer: (
         <div>
             Compulsory workshops incldude: <br />
-            <ul>
+            <ul className="list-disc list-inside">
                 <li>Design Thinking Workshop - 16th August 2025</li>
-                <li>Entrepreneurship Workshop - 16th August 2025</li>
+                <li>Entrepreneurship Workshop - 20th August 2025</li>
+                <li>Pitching Workshop - 6th October 2025</li>
             </ul>
         </div>
     ),
+  },
+  {
+    question:"Can I sign up alone?",
+    answer: "Yes! The organising team will allocate team members for individual signups.",
   }
 ];
 

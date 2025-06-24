@@ -36,7 +36,8 @@ const timelineData = [
           <span>0945-500</span>
         </div>
       </div>
-    )
+    ),
+    hasLink:true,
   },
   {
     title: 'Workshops',
@@ -50,7 +51,7 @@ const timelineData = [
           A series of Entrepreneurship, Design Thinking, and Technical Workshops designed to equip you with the skills bring your ideas to life.
         </p>
       </div>
-    )
+    ),
   },
   {
     title: (
@@ -62,7 +63,7 @@ const timelineData = [
     color: true,
     link: null,
     descriptionHeader:null,
-    descriptionContent:null
+    descriptionContent:null,
   },
   {
     title: (
@@ -76,7 +77,7 @@ const timelineData = [
     color: true,
     // link: 'semis-and-finals',
     descriptionHeader:null,
-    descriptionContent:null
+    descriptionContent:null,
   },
 ];
 
@@ -86,7 +87,7 @@ const OverallTimeline: React.FC = () => {
   
   return (
     <div className="flex flex-col items-center text-2xl pt-16 px-4 lg:px-16 text-white font-extrabold">
-      <p className="lg:text-7xl md:text-6xl text-4xl lg:pt-24 uppercase pb-8 lg:pb-16 align-middle mx-auto">
+      <p className="lg:text-7xl md:text-6xl text-4xl pt-10 lg:pt-24 uppercase pb-8 lg:pb-16 align-middle mx-auto">
         What to Expect
       </p>
       <div className="relative flex items-center justify-center">
@@ -103,6 +104,7 @@ const OverallTimeline: React.FC = () => {
                   position={index % 2 == 1 ? 'left': 'right'}
                   descriptionHeader={item.descriptionHeader}
                   descriptionContent={item.descriptionContent}
+                  hasLink={item.hasLink}
                 />
               }
             </div>

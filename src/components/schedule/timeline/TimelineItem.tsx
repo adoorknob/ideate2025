@@ -9,9 +9,10 @@ type TimelineItemProps = {
   position: "left" | "right";
   descriptionHeader?:React.ReactNode;
   descriptionContent?:React.ReactNode;
+  hasLink?: boolean | false;
 };
 
-const TimelineItem: React.FC<TimelineItemProps> = ({ title, date, shape, link, position, descriptionHeader, descriptionContent }) => {
+const TimelineItem: React.FC<TimelineItemProps> = ({ title, date, shape, link, position, descriptionHeader, descriptionContent, hasLink }) => {
   const markerSource = `../timeline/timeline_${shape}.png`;
   const markerName = `Timeline ${shape}`;
   const isLeft = position === 'left';
@@ -23,11 +24,16 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ title, date, shape, link, p
         <p className="outlined-text text-sm sm:text-base md:text-2xl lg:text-4xl">{date}</p>
         <p>{title}</p>
       </div>
-      <div className="order-2 col-span-1 grid justify-center items-center">
+      <div className="relative order-2 col-span-1 grid justify-center items-center">
         <img
           src={markerSource}
           alt={markerName}
-          className="w-15 h-15 lg:w-20 lg:h-20 object-contain z-20"
+          className={`${!hasLink ? 'hidden' : ''} md:hidden absolute justify-self-center w-15 h-15 lg:w-20 lg:h-20 object-contain z-20 animate-ping opacity-75`}
+        />
+        <img
+          src={markerSource}
+          alt={markerName}
+          className="relative w-15 h-15 lg:w-20 lg:h-20 object-contain z-20"
         />
       </div>
 
