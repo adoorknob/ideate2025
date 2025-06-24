@@ -1,0 +1,25 @@
+---
+// import Layout from "../layouts/Layout.astro";
+// import Workshops from '../components/schedule/workshops/Workshops';
+// import Venue from '../components/schedule/venue/Venue';
+// import OpeningDay from '../components/schedule/timeline/OpeningDay';
+// import OverallTimeline from "@/components/schedule/timeline/OverallTimeline";
+import Layout from "../../layouts/Layout.astro";
+import Workshops from '../../components/schedule/workshops/Workshops';
+import Venue from '../../components/schedule/venue/Venue';
+import OpeningDay from '../../components/schedule/timeline/OpeningDay';
+import OverallTimeline from "@/components/schedule/timeline/OverallTimeline";
+---
+
+<Layout>
+    <section id="timeline">
+        <OverallTimeline client:load/>
+    </section>
+    <section id="opening-day">
+        <OpeningDay />
+    </section>
+    <!-- <section id="workshops">
+        <Workshops client:load/>
+    </section> -->
+</Layout>
+

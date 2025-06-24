@@ -33,7 +33,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ title, date, shape, link, p
         <img
           src={markerSource}
           alt={markerName}
-          className={`${hasLink ? 'animate-pulse' : 'animate-none'} relative w-15 h-15 lg:w-20 lg:h-20 object-contain z-20`}
+          className={`${hasLink ? 'animate-pulse' : 'animate-none'} md:animate-none relative w-15 h-15 lg:w-20 lg:h-20 object-contain z-20`}
         />
       </div>
 

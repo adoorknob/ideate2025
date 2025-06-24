@@ -1,0 +1,58 @@
+---
+// import Layout from '../layouts/Layout.astro';
+
+// import Hero from '../components/home/hero/Hero';
+// import WhatIsIdeate from '../components/home/whatIsIdeate/WhatIsIdeate';
+// import Sponsor from '../components/home/sponsor/Sponsor';
+// import Theme from '../components/home/theme/Theme';
+// import Judges from '../components/home/judges/Judges';
+// import Mentors from '../components/home/mentors/Mentors';
+// import Prizes from '../components/home/prizes/Prizes';
+
+// import RegisterNow from '../components/home/registerNow/RegisterNow';
+
+import Layout from '../../layouts/Layout.astro';
+
+import Hero from '../../components/home/hero/Hero';
+import WhatIsIdeate from '../../components/home/whatIsIdeate/WhatIsIdeate';
+import Sponsor from '../../components/home/sponsor/Sponsor';
+import Theme from '../../components/home/theme/Theme';
+import Judges from '../../components/home/judges/Judges';
+import Mentors from '../../components/home/mentors/Mentors';
+import Prizes from '../../components/home/prizes/Prizes';
+
+import RegisterNow from '../../components/home/registerNow/RegisterNow';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+	<main class="items-center justify-center px-6 lg:px-12 text-center text-black text-base w-screen">
+		<section id="hero">
+			<Hero />
+		</section>
+		<section id="register-now">
+			<RegisterNow isRegistrationOpen={false} client:load/>
+		</section>
+		<section id="what-is-ideate">
+			<WhatIsIdeate />
+		</section>
+		<section id="sponsor">
+			<Sponsor />
+		</section>
+		<section id="theme">
+			<Theme />
+		</section>
+		<!-- <section id="judges">
+			<Judges />
+		</section>
+		<section id="mentors">
+			<Mentors />
+		</section> -->
+		<section id="prizes">
+			<Prizes client:load/>
+		</section>
+	</main>
+	<!-- <TempPage /> -->
+</Layout>
