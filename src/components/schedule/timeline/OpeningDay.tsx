@@ -5,7 +5,7 @@ import data from './OpeningDayInfo.json';
 const OpeningDay: React.FC = () => {
 
     return (
-        <EventTimeline name = "Opening Day" activities={data}/>
+        <EventTimeline name = "Opening Day - 16th Aug 2025" activities={data}/>
     );
 };
 
