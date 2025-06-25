@@ -2,32 +2,44 @@
     {
       "id": 1,
       "timeStart": "0945",
-      "timeEnd": "1020",
+      "timeEnd": "1010",
       "description": "Registration"
     },
     {
       "id": 2,
-      "timeStart": "1020",
-      "timeEnd": "1100",
+      "timeStart": "1010",
+      "timeEnd": "1035",
       "description": "Opening for IDEATE 2025"
     },
     {
       "id": 3,
-      "timeStart": "1100",
-      "timeEnd": "1130",
-      "description": "Introduction to Challenge"
+      "timeStart": "1035",
+      "timeEnd": "1040",
+      "description": "Speech by Guest of Honor"
     },
     {
       "id": 4,
-      "timeStart": "1130",
-      "timeEnd": "1230",
-      "description": "Lunch and Networking"
+      "timeStart": "1040",
+      "timeEnd": "1110",
+      "description": "Introduction to Challenge"
     },
     {
       "id": 5,
+      "timeStart": "1110",
+      "timeEnd": "1210",
+      "description": "Lunch and Networking"
+    },
+    {
+      "id": 6,
+      "timeStart": "1210",
+      "timeEnd": "1230",
+      "description": "Move to studios"
+    },
+    {
+      "id": 6,
       "timeStart": "1230",
-      "timeEnd": "1630",
-      "description": "Design Thinking Workshop (Compulsory)"
+      "timeEnd": "1430",
+      "description": "Design Workshop (Compulsory)"
     }
 ]
   

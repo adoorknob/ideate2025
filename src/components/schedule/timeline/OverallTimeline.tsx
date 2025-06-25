@@ -33,7 +33,7 @@ const timelineData = [
           <img src="../timeline/schedule.png"
           className="w-5 h-5 lg:w-10 lg:h-10 object-contain z-20">
           </img>
-          <span>0945-500</span>
+          <span>0945-1430</span>
         </div>
       </div>
     ),
