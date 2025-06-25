@@ -17,7 +17,7 @@ const getShape = (id: number): Shape => {
 const timelineData = [
   {
     title: 'Opening Day',
-    date: '16 Aug',
+    date: '16th Aug',
     color: true,
     link: 'opening-day',
     descriptionHeader:'',
@@ -42,7 +42,7 @@ const timelineData = [
   {
     title: (
       <div>
-        <div className="text-xs sm:text-base md:text-xl lg:text-2xl">
+        <div>
           Entrepreneurship
         </div>
         <div>
@@ -71,14 +71,14 @@ const timelineData = [
     title: 'Technical Workshops',
     date: '20th - 28th Sep',
     descriptionContent: (
-      <div className="hidden md:block md:text-sm xl:text-2xl">
-        A series of Entrepreneurship, Design Thinking, and Technical Workshops designed to equip you with the skills bring your ideas to life.
+      <div className="hidden md:grid md:text-base xl:text-2xl justify-center">
+        A series of Technical Workshops designed to equip you with the skills bring your ideas to life.
       </div>
     ),
   },
   {
     title: 'Mentor Check-In',
-    date: '29th Sep - 5 Oct',
+    date: '29th Sep - 5th Oct',
   },
   {
     title: 'Pitching Workshop',
@@ -86,7 +86,7 @@ const timelineData = [
   },
   {
     title: (
-      <div>
+      <div className="flex flex-col md:block">
         <span className="whitespace-nowrap">Semi-Finals </span> 
         <span className="text-xs sm:text-lg">and </span> 
         Finals

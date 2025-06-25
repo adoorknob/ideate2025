@@ -19,10 +19,10 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ title, date, shape, link, p
 
   const content = (
     <div className="group grid grid-cols-[minmax(0,1fr)_15%_minmax(0,1fr)] w-full h-32 lg:h-56 transition duration-300 hover:bg-gray-800/30
-    rounded-xl text-sm sm:text-lg md:text-2xl lg:text-4xl leading-tight">
-      <div className={`${isLeft ? 'order-1' : 'order-3 text-right'} mx-5 col-span-1 grid content-center justify-center px-4`}>
-        <p className="outlined-text text-2xs sm:text-base md:text-2xl lg:text-4xl">{date}</p>
-        <p>{title}</p>
+    rounded-xl text-xs sm:text-lg md:text-2xl lg:text-4xl leading-tight items-center justify-center">
+      <div className={`${isLeft ? 'order-1' : 'order-3 text-right'} md:mx-5 col-span-1 grid content-center justify-center px-4`}>
+        <div className="outlined-text text-2xs sm:text-base md:text-2xl lg:text-4xl">{date}</div>
+        <div>{title}</div>
       </div>
       <div className="relative order-2 col-span-1 grid justify-center items-center">
         {/* <img
