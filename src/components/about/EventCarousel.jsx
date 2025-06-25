@@ -39,8 +39,8 @@ export function EventCarousel() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="hidden md:block"/>
-      <CarouselNext className="hidden md:block"/>
+      <CarouselPrevious className="hidden md:grid"/>
+      <CarouselNext className="hidden md:grid"/>
     </Carousel>
   )
 }

@@ -15,7 +15,7 @@ const ContactUs: React.FC = () => {
             />
           </a>
           <a
-            href="mailto:idp.studentsclub@u.nus.edu"
+            href="mailto:idp.studentsclub.ideate@u.nus.edu"
             target="_blank"
           >
             <img
@@ -36,11 +36,11 @@ const ContactUs: React.FC = () => {
         </div>
 
         <a
-          href="mailto:idp.studentsclub@u.nus.edu"
+          href="mailto:idp.studentsclub.ideate@u.nus.edu"
           target="_blank"
           className="mt-2 text-sm lg:text-lg"
         >
-          idp.studentsclub@u.nus.edu
+          idp.studentsclub.ideate@u.nus.edu
         </a>
       </div>
     </div>
