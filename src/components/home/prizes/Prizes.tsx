@@ -34,7 +34,7 @@ const Prizes: React.FC = () => {
             {/* all semis */}
             <div className="flex flex-col justify-center md:grid md:grid-cols-2 m-10">
                 <img 
-                    src="../prizes/all_semis_icon.png"
+                    src="../prizes/all_semis_icon_wo_astar.png"
                     className="hidden md:block w-[40vw]"
                 />
                 <img 
