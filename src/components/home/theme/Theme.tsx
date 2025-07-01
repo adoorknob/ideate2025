@@ -16,7 +16,7 @@ const Theme: React.FC = () => {
                 </div>
                 {/* body text */}
                 <div className="text-base leading-5 sm:leading-normal sm:text-xl md:text-2xl lg:text-3xl text-center font-bold">
-                    To be revealed closer to the competition date
+                    To be revealed on 16th Aug 2025 - Launch Day
                 </div>
                 <ThemeLogo />
             </div>
