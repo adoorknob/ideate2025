@@ -42,7 +42,7 @@ const Prizes: React.FC = () => {
                     className="w-[50vw] md:w-[40vw] self-center"
                 />
                 <img 
-                    src="../prizes/all_semis_icon.png"
+                    src="../prizes/all_semis_icon_wo_astar.png"
                     className="block md:hidden w-[60vw] mt-10 self-center"
                 />
                 <div className="m-3 md:col-span-2 w-[80vw]">
