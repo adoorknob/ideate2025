@@ -36,14 +36,15 @@ const Sponsor: React.FC = () => {
                         by:
                     </div>
                 </div>
-                <div className="w-full flex flex-col md:grid md:grid-cols-2 content-center items-center justify-between bg-white rounded-3xl">
-                    <img 
+                {/* <div className="w-full flex flex-col md:grid md:grid-cols-2 content-center items-center justify-between bg-white rounded-3xl"> */}
+                <div className="w-full flex flex-col md:grid md:grid-cols-1 content-center items-center justify-between bg-white rounded-3xl">
+                    {/* <img 
                         src="../sponsors/astar.png"
                         className="w-[40vw] md:w-[25vw] m-10 self-center justify-self-center"
-                    />
+                    /> */}
                     <img 
                         src="../sponsors/medtronic.webp"
-                        className="w-[40vw] md:w-[25vw] m-10 justify-self-center"
+                        className="w-[35vw] md:w-[20vw] m-10 justify-self-center"
                     />
                 </div>
             </div>

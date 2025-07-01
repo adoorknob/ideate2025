@@ -11,11 +11,12 @@ const WhatIsIdeate: React.FC = () => {
                 <div className="col-span-2 text-sm sm:text-base md:text-xl lg:text-2xl text-left">
                     <p className="text-justify">
                         IDEATE isn’t just a competition—it’s a launchpad for mechatronic solutions with real-world potential.
+                        Open to <span className="font-bold">all disciplines</span>, this challenge brings together passionate teams who dare to imagine, build, and solve. 
+                        You bring the idea—we provide the space to explore it, question it, build it, and bring it to life. 
                         <br />
                         <br />
-                        Open to all disciplines, this challenge brings together passionate teams who dare to imagine, build, and solve. 
-                        IDEATE offers the freedom to innovate for practical applications. You bring the idea—we provide the space to explore it, 
-                        question it, build it, and bring it to life.
+                        Sign up as <span className="font-bold">individuals</span> or <span className="font-bold">teams of 3-5</span> {" "}  
+                        and pitch your ideas for a chance to be one of the <span className="font-bold">16 semi-finalist teams</span>.
                     </p>
                 </div>
                 <div className="relative grid invisible md:visible">
@@ -30,9 +31,9 @@ const WhatIsIdeate: React.FC = () => {
                         className="w-[25vw]"
                     />
                 </div>
-                <div className="md:col-span-2 font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl text-left">
-                    Expect brainstorming sessions, rapid prototyping, hands-on mentorship, and the thrill of seeing your concept evolve into 
-                    something real. 
+                <div className="md:col-span-2 text-sm sm:text-base md:text-xl lg:text-2xl text-left">
+                    Expect <span className="font-bold">10 weeks</span> of brainstorming sessions, rapid prototyping, hands-on mentorship, and the thrill of seeing your concept evolve into 
+                    something real.  
                     <br />
                     <br />
                     IDEATE is where raw ideas meet bold execution.
