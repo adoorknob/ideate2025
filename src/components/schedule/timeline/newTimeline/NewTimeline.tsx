@@ -7,7 +7,7 @@ const timelineData = [
         title: 'Opening Day',
         date: '16th Aug',
         description: 'Launch of IDEATE 2025 & First Workshop',
-        link: null
+        link: 'opening-day'
     },
     {
         title: 'Entrepreneurship Workshop',
