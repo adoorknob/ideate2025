@@ -63,7 +63,7 @@ const Timeline : React.FC = () => {
         const sectionEnd = rect.bottom;
 
         const total = sectionEnd - sectionStart;
-        const scrolled = viewportCenter - sectionStart;
+        const scrolled = viewportCenter - 250 - sectionStart;
 
         const percent = Math.min(Math.max((scrolled / total) * 100, 0), 100);
         setProgress(percent);
