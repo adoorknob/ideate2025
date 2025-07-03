@@ -17,9 +17,13 @@ const Sponsor: React.FC = () => {
                         src="../sponsors/cde_logo.png"
                         className="w-[50vw] sm:w-[40vw] md:w-[25vw] m-10 self-center justify-self-center"
                     />
-                    <img 
+                    {/* <img 
                         src="../sponsors/b71_logo.svg"
                         className="w-[38vw] sm:w-[30vw] md:w-[18vw] m-5 self-center justify-self-center"
+                    /> */}
+                    <img 
+                        src="../sponsors/enterprise.png"
+                        className="w-[60vw] sm:w-[48vw] md:w-[30vw] m-5 self-center justify-self-center"
                     />
                     <img 
                         src="../sponsors/idpsc.avif"
