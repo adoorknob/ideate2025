@@ -21,7 +21,7 @@ const getShape = (index : number) : Shape => {
 
 const TimelineListItem : React.FC<timelineItemProps> = ({ title, date, description, link, index }) => {
     return (
-        <li className="grid grid-cols-12 gap-6 md:gap-8 mt-10">
+        <li className="relative z-10 grid grid-cols-12 gap-6 md:gap-8 mt-10">
             <div className="relative col-span-3 lg:col-span-1 justify-center items-center">
                 <img
                     src={`../timeline/white_${getShape(index)}.png`}

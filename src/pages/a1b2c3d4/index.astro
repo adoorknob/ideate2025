@@ -19,7 +19,8 @@ import Sponsor from '../../components/home/sponsor/Sponsor';
 import Theme from '../../components/home/theme/Theme';
 import Judges from '../../components/home/judges/Judges';
 import Mentors from '../../components/home/mentors/Mentors';
-import Prizes from '../../components/home/prizes/Prizes';
+// import Prizes from '../../components/home/prizes/Prizes';
+import Prizes from '@/components/home/prizes/CollapsedPrizes';
 
 import RegisterNow from '../../components/home/registerNow/RegisterNow';
 
@@ -38,9 +39,6 @@ import RegisterNow from '../../components/home/registerNow/RegisterNow';
 		<section id="what-is-ideate">
 			<WhatIsIdeate />
 		</section>
-		<section id="sponsor">
-			<Sponsor />
-		</section>
 		<section id="theme">
 			<Theme />
 		</section>
@@ -52,6 +50,9 @@ import RegisterNow from '../../components/home/registerNow/RegisterNow';
 		</section> -->
 		<section id="prizes">
 			<Prizes client:load/>
+		</section>
+		<section id="sponsor">
+			<Sponsor />
 		</section>
 	</main>
 	<!-- <TempPage /> -->

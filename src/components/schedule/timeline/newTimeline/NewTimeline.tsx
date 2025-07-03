@@ -75,7 +75,7 @@ const Timeline : React.FC = () => {
     }, []);
 
     return (
-        <div ref={targetRef} className="text-white mx-10 lg:mx-20 flex flex-col items-center justify-center text-sm lg:text-xl">
+        <div ref={targetRef} className="text-white mx-10 lg:mx-20 mt-20 flex flex-col items-center justify-center text-sm lg:text-xl">
             <div className="relative text-3xl lg:text-7xl font-extrabold uppercase w-full text-left p-5 pb-10 lg:p-10 lg:pb-20">
                 <div>
                     What To
@@ -96,7 +96,7 @@ const Timeline : React.FC = () => {
                             />
                     ))}
                 </ul>
-                <div className="-z-10 absolute top-3 w-[3px] h-full left-4 md:left-2 bg-gradient-to-b from-[#009D52] via-[#D6BA4B] to-[#C62929]">
+                <div className="z-0 absolute top-3 w-[3px] h-full left-4 md:left-2 bg-gradient-to-b from-[#009D52] via-[#D6BA4B] to-[#C62929]">
                       <div
                         className="bg-white w-full origin-top transition-all duration-10 ease-out"
                         style={{ height: `${progress}%` }}
