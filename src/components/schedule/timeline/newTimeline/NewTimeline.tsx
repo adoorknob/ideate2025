@@ -6,43 +6,49 @@ const timelineData = [
     {
         title: 'Opening Day',
         date: '16th Aug',
-        description: 'The day of opening',
+        description: 'Launch of IDEATE 2025 & First Workshop',
         link: null
     },
     {
         title: 'Entrepreneurship Workshop',
         date: '20th Aug',
-        description: 'The day of opening',
+        description: 'Learn about the fundamentals of starting a business', 
         link: null
     },
     {
         title: 'Preliminary Design Submission',
         date: '3rd Sep',
-        description: 'The day of opening',
+        description: 'Submit a video recording of your idea for judges to review',
+        link: null
+    },
+    {
+        title: 'Prototyping',
+        date: 'September to October',
+        description: 'Congrats your in the semi-finals! Time to make it real',
         link: null
     },
     {
         title: 'Technical Workshops',
         date: '20th to 28th Sep',
-        description: 'A series of Technical Workshops designed to equip you with the skills bring your ideas to life.',
+        description: 'Develop the skills to bring your ideas to life',
         link: null
     },
     {
         title: 'Mentor Check-in',
         date: '2th Sep to 5th Oct',
-        description: 'Where the mentors check in',
+        description: 'Consultations with industrial mentors',
         link: null
     },
     {
         title: 'Pitching Workshop',
         date: '6th Oct',
-        description: 'yeah',
+        description: 'Learn how to pitch like a pro',
         link: null
     },
     {
         title: 'Semi-finals and Finals',
         date: '15th Oct',
-        description: 'yeah',
+        description: 'Showcase your final prototype in the Semi-finals Exhibition. Finalists will get to pitch it on the big stage.',
         link: null
     },
 ]
