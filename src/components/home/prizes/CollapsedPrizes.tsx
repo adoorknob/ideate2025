@@ -8,7 +8,7 @@ import {
 
 const Prizes: React.FC = () => {
     return (
-        <div className="bg-inherit flex flex-col items-center justify-center text-white text-base mx-5 lg:mx-20">
+        <div className="bg-inherit flex flex-col items-center justify-center text-white text-base mx-5 lg:mx-20 mt-20">
             <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold uppercase">
                 prizes:
             </div>
