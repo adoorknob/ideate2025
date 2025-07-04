@@ -44,7 +44,7 @@ const TimelineListItem : React.FC<timelineItemProps> = ({ title, date, descripti
                             viewBox="0 0 24 24"
                             strokeWidth={2}
                             stroke="currentColor"
-                            className="w-20 h-20 text-white group-hover:text-blue-200"
+                            className="w-5 h-5 md:w-20 md:h-20 text-white group-hover:text-blue-200"
                         >
                             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                         </svg>
