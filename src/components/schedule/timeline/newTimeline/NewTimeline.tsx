@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 const timelineData = [
     {
-        title: 'Opening Day',
+        title: 'Launch Day',
         date: '16th Aug',
         description: 'Launch of IDEATE 2025 & First Workshop',
         link: 'opening-day'

@@ -30,12 +30,26 @@ const TimelineListItem : React.FC<timelineItemProps> = ({ title, date, descripti
                     className='absolute h-4 mt-[1rem] md:mt-[2.5rem] left-[8.5px] md:left-0.25'
                 />
             </div>
-            <div className={`col-span-9 lg:col-span-10 
-           
-                `}>
-                <p className="outlined-text uppercase text-base lg:text-2xl">{date}</p>
-                <h5 className="uppercase font-semibold text-xl lg:text-4xl mb-2 leading-tight -mt-2">{title}</h5>
-                <p>{description}</p>
+            <div className={`col-span-9 lg:col-span-10 ${ link ? `hover:text-blue-200 hover:translate-x-10 transition duration-300 ease-in-out`: ``}`}>
+                <div className="grid grid-cols-9 group">
+                    <div className="col-span-8">
+                        <p className="outlined-text uppercase text-base lg:text-2xl">{date}</p>
+                        <h5 className="uppercase font-semibold text-xl lg:text-4xl mb-2 leading-tight -mt-2">{title}</h5>
+                        <p>{description}</p>
+                    </div>
+                    <div className={`col-span-1 grid items-center justify-end ${ link ? `visible` : `hidden` }`}>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={2}
+                            stroke="currentColor"
+                            className="w-20 h-20 text-white group-hover:text-blue-200"
+                        >
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                </div>
             </div>
         </li>
     )
