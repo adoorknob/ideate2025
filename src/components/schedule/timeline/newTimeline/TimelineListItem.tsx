@@ -27,15 +27,15 @@ const TimelineListItem : React.FC<timelineItemProps> = ({ title, date, descripti
                 <img
                     src={`../timeline/white_${getShape(index)}.png`}
                     alt='Timeline Shape'
-                    className='absolute h-4 mt-[1rem] md:mt-[2.5rem] left-[8.5px] md:left-0.25'
+                    className='absolute h-4 2xl:h-8 mt-[1rem] md:mt-[2.5rem] left-[8.5px] md:left-0.25 2xl:left-4'
                 />
             </div>
             <div className={`col-span-9 lg:col-span-10 ${ link ? `hover:text-blue-200 hover:translate-x-10 transition duration-300 ease-in-out`: ``}`}>
                 <div className="grid grid-cols-9 group">
                     <div className="col-span-8">
-                        <p className="outlined-text uppercase text-base lg:text-2xl">{date}</p>
-                        <h5 className="uppercase font-semibold text-xl lg:text-4xl mb-2 leading-tight -mt-2">{title}</h5>
-                        <p>{description}</p>
+                        <p className="outlined-text uppercase text-base lg:text-2xl 2xl:text-4xl">{date}</p>
+                        <h5 className="uppercase font-semibold text-xl lg:text-4xl 2xl:text-6xl mb-2 leading-tight -mt-2">{title}</h5>
+                        <p className="2xl:text-4xl">{description}</p>
                     </div>
                     <div className={`col-span-1 grid items-center justify-end ${ link ? `visible` : `hidden` }`}>
                         <svg

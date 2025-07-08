@@ -81,12 +81,12 @@ const Timeline : React.FC = () => {
     }, []);
 
     return (
-        <div ref={targetRef} className="text-white mx-10 lg:mx-20 mt-20 flex flex-col items-center justify-center text-sm lg:text-xl">
-            <div className="relative text-3xl lg:text-7xl font-extrabold uppercase w-full text-left p-5 pb-10 lg:p-10 lg:pb-20">
+        <div ref={targetRef} className="text-white mx-10 lg:mx-20 2xl:mx-40 mt-20 flex flex-col items-center justify-center text-sm lg:text-xl">
+            <div className="relative text-3xl lg:text-7xl 2xl:text-9xl font-extrabold uppercase w-full text-left p-5 pb-10 lg:p-10 lg:pb-20 2xl:p-20 2xl:pb-30">
                 <div>
                     What To
                 </div>
-                <div className="absolute top-11 left-20 lg:top-25 lg:left-50">
+                <div className="absolute top-11 left-20 lg:top-25 lg:left-50 2xl:top-45 2xl:left-86">
                     Expect
                 </div>
             </div>
@@ -102,7 +102,7 @@ const Timeline : React.FC = () => {
                             />
                     ))}
                 </ul>
-                <div className="z-0 absolute top-3 w-[3px] h-full left-4 md:left-2 bg-gradient-to-b from-[#009D52] via-[#D6BA4B] to-[#C62929]">
+                <div className="z-0 absolute top-3 w-[3px] 2xl:w-[6px] h-full left-4 md:left-2 2xl:left-8 bg-gradient-to-b from-[#009D52] via-[#D6BA4B] to-[#C62929]">
                       <div
                         className="bg-white w-full origin-top transition-all duration-10 ease-out"
                         style={{ height: `${progress}%` }}
