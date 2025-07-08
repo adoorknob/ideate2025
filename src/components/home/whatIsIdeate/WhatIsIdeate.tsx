@@ -8,7 +8,7 @@ const WhatIsIdeate: React.FC = () => {
                 <TitleText />
             </div>
             <div className="w-full px-10 sm:px-20 xl:px-30 md:grid md:grid-cols-3 gap-4 gap-y-10">
-                <div className="col-span-2 text-sm sm:text-base md:text-xl lg:text-2xl 2xl:text-2xl text-left">
+                <div className="col-span-2 text-sm sm:text-base md:text-xl lg:text-2xl 2xl:text-4xl text-left">
                     <p className="text-justify">
                         IDEATE isn’t just a competition—it’s a launchpad for mechatronic solutions with real-world potential.
                         Open to <span className="font-bold">all disciplines</span>, this challenge brings together passionate teams who dare to imagine, build, and solve. 
