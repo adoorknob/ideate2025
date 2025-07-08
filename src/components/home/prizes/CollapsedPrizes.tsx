@@ -17,7 +17,7 @@ const Prizes: React.FC = () => {
                 <img src="../prizes/collapsed.png"/>
             </div>
 
-            <div className="text-sm sm:text-base md:text-lg lg:text-xl mt-3 md:mt-5 mb-10 ">
+            <div className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-3xl mt-3 md:mt-5 mb-10 ">
                 <span>
                     More information about the {" "}
                     <a 
@@ -28,14 +28,14 @@ const Prizes: React.FC = () => {
                 </span>
             </div>
 
-            <Accordion className="w-full bg-gray-100/10 px-5 rounded-xl" type="single" collapsible>
+            <Accordion className="w-full bg-gray-100/10 px-5 xl:px-10 xl:py-5 rounded-xl" type="single" collapsible>
                 <AccordionItem value="TnCs">
-                <AccordionTrigger className="text-base sm:text-lg md:text-xl lg:text-2xl">
+                <AccordionTrigger className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-4xl">
                     *Click Here to see Terms and Conditions
                 </AccordionTrigger>
-                <AccordionContent className="text-justify text-normal text-sm sm:text-base md:text-lg lg:text-xl">
-                    <div className="rounded-xl bg-gray-100/10 p-3 m-1">
-                        <span className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold">
+                <AccordionContent className="text-justify text-normal text-sm sm:text-base md:text-lg lg:text-xl xl:text-3xl">
+                    <div className="rounded-xl bg-gray-100/10 p-3 xl:p-7 m-1">
+                        <span className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-4xl font-semibold">
                             S$1,000 Innovation and Design Programme (iDP) Prototyping Fund
                         </span>
                         <span>
@@ -47,8 +47,8 @@ const Prizes: React.FC = () => {
                             <a className="underline text-blue-300 hover:text-blue-400" href="https://cde.nus.edu.sg/edic/idp/modules/eg4301a/">/4301A</a>
                         </span>
                     </div>
-                    <div className="rounded-xl bg-gray-100/10 p-3 m-1">
-                        <span className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold">
+                    <div className="rounded-xl bg-gray-100/10 p-3 xl:p-7 m-1">
+                        <span className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-4xl font-semibold">
                             NUS Overseas Colleges (NOC) Greenlane
                         </span>
                         <span>
@@ -59,8 +59,8 @@ const Prizes: React.FC = () => {
                             are in our <a className="underline text-blue-300 hover:text-blue-400" href="/faq">FAQ page</a>.
                         </span>
                     </div>
-                    <div className="rounded-xl bg-gray-100/10 p-3 m-1">
-                        <span className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold">
+                    <div className="rounded-xl bg-gray-100/10 p-3 xl:p-7 m-1">
+                        <span className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-4xl font-semibold">
                             Among Semifinalists
                         </span>
                         <span>
