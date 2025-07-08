@@ -10,7 +10,7 @@ const ContactUs: React.FC = () => {
             <img
               src="../title/ig_button.png"
               alt="Instagram button"
-              className="h-8 md:h-12 lg:h-20 align-start hover:rotate-12 transition-all"
+              className="h-8 md:h-12 lg:h-20 xl:h-30 align-start hover:rotate-12 transition-all"
               loading="lazy"
             />
           </a>
@@ -21,7 +21,7 @@ const ContactUs: React.FC = () => {
             <img
               src="../title/mail_button.png"
               alt="Mail button"
-              className="h-10 md:h-16 lg:h-28 hover:rotate-12 transition-all"
+              className="h-10 md:h-16 lg:h-28 xl:h-39 hover:rotate-12 transition-all"
               loading="lazy"
             />
           </a>
@@ -29,7 +29,7 @@ const ContactUs: React.FC = () => {
             <img
               src="../title/telegram_icon.png"
               alt="Telegarm button"
-              className="h-10 md:h-16 lg:h-20 hover:rotate-12 transition-all"
+              className="h-10 md:h-16 lg:h-20 xl:h-30 hover:rotate-12 transition-all"
               loading="lazy"
             />
           </a>
@@ -38,7 +38,7 @@ const ContactUs: React.FC = () => {
         <a
           href="mailto:idp.studentsclub.ideate@u.nus.edu"
           target="_blank"
-          className="mt-2 text-sm lg:text-lg"
+          className="mt-2 text-sm lg:text-lg xl:text-3xl "
         >
           idp.studentsclub.ideate@u.nus.edu
         </a>

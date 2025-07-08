@@ -8,7 +8,7 @@ const RegisterNow: React.FC<RegisterNowProps> = ({ isRegistrationOpen }) => {
     const [hovered, setHovered] = useState(false);
 
     return (
-        <div className="relative bg-inherit flex items-center justify-center text-black text-base h-screen">
+        <div className="relative bg-inherit flex items-center justify-center text-black text-base h-[60vh] md:h-screen">
             <div className="w-full h-auto">
                 <img 
                     src={ isRegistrationOpen ? "../register_now/text_open.png" : "../register_now/text_opensSoon.png"}
