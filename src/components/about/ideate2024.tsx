@@ -1,5 +1,6 @@
 import React from "react"
 import { EventCarousel } from "./EventCarousel"
+import DoughnutChart from "./DoughnutChart"
 
 const Ideate2024: React.FC = () => {
     return (
@@ -57,6 +58,7 @@ const Ideate2024: React.FC = () => {
                 </div>
                 <EventCarousel />
             </div>
+            <DoughnutChart />
         </div>
     )
 }
