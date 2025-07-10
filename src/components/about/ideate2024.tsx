@@ -69,10 +69,10 @@ const Ideate2024: React.FC = () => {
                         className="m-5 w-[30vw] md:w-[15vw]"
                     />
                 </div>
-                <div className="hidden md:block">
+                {/* <div className="hidden md:block">
                     <DoughnutChart />
-                </div>
-                <div className="visible flex justify-center md:hidden">
+                </div> */}
+                <div className="visible flex justify-center">
                     <img
                         src="../info/mobile_chart.png"
                         className="w-[40vw]"
