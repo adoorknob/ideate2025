@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { PieChart } from '@mui/x-charts/PieChart';
 import { useInView } from 'react-intersection-observer';
+import { useWindowSize } from './useWindowSize';
+import ReactCurvedText from 'react-curved-text'
 
 const data1 = [
   { label: 'Registered Participants: IDEATE', value: 351 },
@@ -22,50 +24,58 @@ export default function PieChartWithPaddingAngle() {
     threshold: 0.3,       // % of component in viewport to trigger
   });
 
+  const { width: windowWidth } = useWindowSize();
+
+  const chartHeight = Math.min(Math.max(windowWidth * 0.8, 200), 500);
+  const chartWidth = 500;
+  // const chartHeight = 200;
+
   return (
-    <div ref={ref} className='w-full h-[50vh] overflow-visible'>
+    <div ref={ref} className='w-full overflow-visible'>
         {inView && (
-      <PieChart
-        series={[
-            {
-                highlightScope: { fade: 'global', highlight: 'item' },
-                faded: { innerRadius: 65, outerRadius: 75, color: 'gray' },
-                paddingAngle: 5,
-                innerRadius: 60,
-                outerRadius: 80,
-                cornerRadius: 5,
-                startAngle: -30,
-                endAngle: 225,
-                data: data1,
-            },
-            {
-                highlightScope: { fade: 'global', highlight: 'item' },
-                faded: { innerRadius: 95, outerRadius: 105, color: 'gray' },
-                paddingAngle: 4,
-                innerRadius: 90,
-                outerRadius: 110,
-                cornerRadius: 5,
-                startAngle: -30,
-                endAngle: 250,
-                data: data2,
-            },
-            {
-                highlightScope: { fade: 'global', highlight: 'item' },
-                faded: { innerRadius: 125, outerRadius: 135, color: 'gray' },
-                paddingAngle: 3,
-                innerRadius: 120,
-                outerRadius: 140,
-                cornerRadius: 5,
-                startAngle: -30,
-                endAngle: 275,
-                data: data3,
-            },
-        ]}
-        width={500}
-        height={500}
-        hideLegend
-      />
-    )}
-    </div>
+          <div>
+            <PieChart
+              series={[
+                  {
+                      highlightScope: { fade: 'global', highlight: 'item' },
+                      faded: { innerRadius: 65, outerRadius: 85, color: 'gray' },
+                      paddingAngle: 5,
+                      innerRadius: 60,
+                      outerRadius: 90,
+                      cornerRadius: 5,
+                      startAngle: -30,
+                      endAngle: 245,
+                      data: data1,
+                  },
+                  {
+                      highlightScope: { fade: 'global', highlight: 'item' },
+                      faded: { innerRadius: 115, outerRadius: 135, color: 'gray' },
+                      paddingAngle: 4,
+                      innerRadius: 110,
+                      outerRadius: 140,
+                      cornerRadius: 5,
+                      startAngle: -30,
+                      endAngle: 260,
+                      data: data2,
+                  },
+                  {
+                      highlightScope: { fade: 'global', highlight: 'item' },
+                      faded: { innerRadius: 165, outerRadius: 185, color: 'gray' },
+                      paddingAngle: 3,
+                      innerRadius: 160,
+                      outerRadius: 190,
+                      cornerRadius: 5,
+                      startAngle: -30,
+                      endAngle: 275,
+                      data: data3,
+                  },
+              ]}
+              width={chartWidth}
+              height={chartHeight}
+              hideLegend
+            />
+          </div>
+        )}
+      </div>
   );
 }

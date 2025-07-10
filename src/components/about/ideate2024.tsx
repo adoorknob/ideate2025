@@ -10,7 +10,7 @@ const Ideate2024: React.FC = () => {
                 <div className="absolute top-11 left-19 sm:top-15 sm:left-29 md:top-18 md:left-33 lg:top-20 lg:left-40 2xl:top-30 2xl:left-45">ideate</div>
             </div>
             {/* old theme */}
-            <div className="flex flex-col md:flex-row bg-gray-100/10 rounded-xl p-10" >
+            {/* <div className="flex flex-col md:flex-row bg-gray-100/10 rounded-xl p-10" >
                 <div className="grid items-center justify-center">
                     <img 
                         src="../info/ideate2024/IDEATE_2024.png"
@@ -46,19 +46,45 @@ const Ideate2024: React.FC = () => {
                         />
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* ideate 2024 info */}
             <div className="grid md:grid-cols-2 pt-10 gap-15">
                 <div className="col-span-1 text-justify text-sm sm:text-lg lg:text-xl 2xl:text-4xl"> 
-                    <span className="font-bold">"Innovating the Ordinary: Future Home Edition"</span> was the theme of IDEATE 2024, 
-                    aimed at challenging university students in Singapore to envision and create innovative solutions that enhance
-                    everyday living. The first makerthon in IDEATE's history, IDEATE 2024 garnered over 250 participants, with a
-                    prize pool of $10,000 SGD and incubation at The Hangar.
+                    IDEATE is the flagship innovation makerthon jointly organised by the College of Design and Engineering (CDE), 
+                    CDE Innovation Design and Programme Student Club (iDPSC) and NUS Enterprise at the National University of Singapore 
+                    (NUS). IDEATE is a merger of two highly successful events, 
+                    IDEATE and the Eureka Innovation Challenge, with the objective to foster innovation and entrepreneurial 
+                    spirit among NUS students by encouraging aspiring innovators to develop practical solutions for real-world 
+                    challenges. This merger not only amplifies the reach and impact of both events but also provides a larger, 
+                    more vibrant platform for aspiring innovators to shape ideas that address the needs of the future.
                 </div>
                 <EventCarousel />
             </div>
-            <DoughnutChart />
+
+            <div className="mt-5 grid grid-cols-1 md:grid-cols-3 w-full items-center justify-center content-center">
+                <div className="flex justify-center">
+                    <img
+                        src="../info/EUREKA.png"
+                        className="m-5 w-[30vw] md:w-[15vw]"
+                    />
+                </div>
+                <div className="hidden md:block">
+                    <DoughnutChart />
+                </div>
+                <div className="visible flex justify-center md:hidden">
+                    <img
+                        src="../info/mobile_chart.png"
+                        className="w-[40vw]"
+                    />
+                </div>
+                <div className="flex justify-center">
+                    <img
+                        src="../info/IDEATE_2024.png"
+                        className="m-5 w-[30vw] md:w-[15vw]"
+                    />
+                </div>
+            </div>
         </div>
     )
 }

@@ -10,9 +10,13 @@ import {
 
 const images = [
   "../info/ideate2024/ideate2024_intro.jpeg",
+  "../info/eureka/eureka_1.jpg",
   "../info/ideate2024/turnout.jpeg",
+  "../info/eureka/eureka_2.jpg",
   "../info/ideate2024/finals.jpeg",
+  "../info/eureka/eureka_3.jpg",
   "../info/ideate2024/participant1.jpeg",
+  "../info/eureka/eureka_4.jpg",
   "../info/ideate2024/participant2.jpeg",
   "../info/ideate2024/participant3.jpeg",
 ];
