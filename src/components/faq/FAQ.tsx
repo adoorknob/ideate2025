@@ -54,7 +54,7 @@ const faqData = [
             Compulsory workshops incldude: <br />
             <ul className="list-disc list-inside">
                 <li>Innovation Design Workshop - 16th August 2025</li>
-                <li>Entrepreneurship Workshop - 20th August 2025</li>
+                <li>Building the Innovation Mindset - 20th August 2025</li>
                 <li>Pitching Workshop - 6th October 2025</li>
             </ul>
         </div>
