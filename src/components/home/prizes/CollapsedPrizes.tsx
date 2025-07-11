@@ -14,7 +14,8 @@ const Prizes: React.FC = () => {
             </div>
 
             <div>
-                <img src="../prizes/collapsed.png"/>
+                <img src="../prizes/collapsed.png"
+                    className="my-10"/>
             </div>
 
             <div className="text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-3xl mt-3 md:mt-5 mb-10 ">
