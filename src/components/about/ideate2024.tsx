@@ -6,8 +6,8 @@ const Ideate2024: React.FC = () => {
     return (
         <div className="flex flex-col items-center justify-center text-white text-base pt-25 px-15 md:px-20 lg:px-50">
             <div className="relative w-full uppercase text-3xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-9xl font-extrabold p-5 h-25 sm:h-45 2xl:h-80">
-                <div>about</div>
-                <div className="absolute top-11 left-19 sm:top-15 sm:left-29 md:top-18 md:left-33 lg:top-20 lg:left-40 2xl:top-30 2xl:left-45">ideate</div>
+                <div>highlights</div>
+                <div className="absolute top-11 left-19 sm:top-15 sm:left-29 md:top-18 md:left-33 lg:top-20 lg:left-40 2xl:top-30 2xl:left-45">from 2024</div>
             </div>
             {/* old theme */}
             {/* <div className="flex flex-col md:flex-row bg-gray-100/10 rounded-xl p-10" >
@@ -49,6 +49,18 @@ const Ideate2024: React.FC = () => {
             </div> */}
 
             {/* ideate 2024 info */}
+            <div className="mt-5 w-full content-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 justify-center content-center">
+                    <img
+                        src="../info/numbers_ideate.png"
+                        className="m-5 w-[50vw] md:w-[28vw] justify-self-center"
+                    />
+                    <img
+                        src="../info/numbers_eureka.png"
+                        className="m-5 w-[50vw] md:w-[28vw] justify-self-center"
+                    />
+                </div>
+            </div>
             <div className="grid md:grid-cols-2 pt-10 gap-15">
                 <div className="col-span-1 text-justify text-sm sm:text-lg lg:text-xl 2xl:text-4xl"> 
                     IDEATE is the flagship innovation makerthon jointly organised by the College of Design and Engineering
@@ -62,14 +74,6 @@ const Ideate2024: React.FC = () => {
                 <EventCarousel />
             </div>
 
-            <div className="mt-5 w-full items-center justify-center content-center">
-                <div className="flex justify-center">
-                    <img
-                        src="../info/numbers.png"
-                        className="m-5 w-[30vw] md:w-[50vw]"
-                    />
-                </div>
-            </div>
         </div>
     )
 }
