@@ -28,18 +28,19 @@ const Intro: React.FC = () => {
 
             <div className="mt-5 sm:mt-10 text-justify">
                 <div className="w-full text-sm sm:text-lg lg:text-xl 2xl:text-4xl mb-10">
-                    The iDP Students’ Club strives to nurture and develop a vibrant community of aspiring engineers, 
-                    innovators and entrepreneurs in the iDP. We aim to play a vital role in the university experience 
-                    of iDP students through organising events and programmes such as social networking events, professional 
-                    development workshops, internship placements, and publicity campaigns.
+                    The iDP Students’ Club strives to build a vibrant community of aspiring engineers, designers, innovators, 
+                    and entrepreneurs. We aim to enrich the iDP and NUS students’ experience by organising social events, 
+                    professional development workshops, internship opportunities, and publicity campaigns.
                 </div>
                 <div className="w-full text-base sm:text-lg lg:text-xl 2xl:text-4xl">
-                    IDEATE is iDPSC's annual flagship hackathon. Following the success of IDEATE 2024, we are honoured to have 
-                    the support of the {" "} 
-                        <a href="https://cde.nus.edu.sg" className="underline font-semibold text-blue-300 hover:text-blue-400">College of Design and Engineering (CDE)</a> 
-                    {" "} as well as{" "}  
+                    Following the success of IDEATE 2024, we are honoured to have 
+                    the synergistic support of the {" "} 
+                        <a href="https://cde.nus.edu.sg" className="underline font-semibold text-blue-300 hover:text-blue-400">CDE Office of 
+                    Research and Technology</a> 
+                    {" "} and {" "}  
                         <a href="https://enterprise.nus.edu.sg" className="underline font-semibold text-blue-300 hover:text-blue-400">NUS Enterprise</a> 
-                    {" "} in organising IDEATE 2025, bringing began as a homegrown ideathon to a faculty level makerthon. 
+                    {" "} for IDEATE 2025. What began as a homegrown ideathon has now 
+                    grown into a faculty-level makerthon, bringing together innovators from across the NUS community.
                 </div>
             </div>
         </div>
