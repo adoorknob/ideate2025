@@ -28,10 +28,13 @@ const RegisterNow: React.FC<RegisterNowProps> = ({ isRegistrationOpen }) => {
                             src="../register_now/web_reg_button.png"
                             className={`absolute top-15 md:top-10 left-1/2 md:left-2/3 translate-y-1/3 w-[35vw] md:w-[25vw] h-auto`}
                         />
+                        
                         <img
                             src="../register_now/lit_bulb.png"
-                            className={`absolute top-15 md:top-10 left-1/2 md:left-2/3 translate-y-1/3 w-[35vw] md:w-[25vw] h-auto transition-opacity duration-150 opacity-0 ${hovered ? 'md:opacity-100' : 'md:opacity-0'}`}
+                            className={`absolute top-15 md:top-10 left-1/2 md:left-2/3 translate-y-1/3 w-[35vw] md:w-[25vw] h-auto transition-opacity ${hovered? "opacity-100":"animate-pulse"}`}
                         />
+                        
+                        {/* MOBILE */}
                         <img
                             src="../register_now/mobile_reg_button.png"
                             className={`absolute top-15 md:top-10 left-1/2 md:left-2/3 translate-y-1/3 w-[35vw] md:w-[25vw] h-auto md:hidden`}
