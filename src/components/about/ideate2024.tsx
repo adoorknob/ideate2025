@@ -51,10 +51,10 @@ const Ideate2024: React.FC = () => {
             {/* ideate 2024 info */}
             <div className="grid md:grid-cols-2 pt-10 gap-15">
                 <div className="col-span-1 text-justify text-sm sm:text-lg lg:text-xl 2xl:text-4xl"> 
-                    IDEATE is the flagship innovation makerthon jointly organised by the College of Design and Engineering (CDE), 
-                    CDE Innovation Design and Programme Student Club (iDPSC) and NUS Enterprise at the National University of Singapore 
-                    (NUS). IDEATE is a merger of two highly successful events, 
-                    IDEATE and the Eureka Innovation Challenge, with the objective to foster innovation and entrepreneurial 
+                    IDEATE is the flagship innovation makerthon jointly organised by the College of Design and Engineering
+                    (CDE) Office of Research and Technology, CDE Innovation Design and Programme Student Club (iDPSC) and 
+                    NUS Enterprise at the National University of Singapore (NUS). IDEATE is a merger of two highly successful 
+                    events, IDEATE and the Eureka Innovation Challenge, with the objective to foster innovation and entrepreneurial 
                     spirit among NUS students by encouraging aspiring innovators to develop practical solutions for real-world 
                     challenges. This merger not only amplifies the reach and impact of both events but also provides a larger, 
                     more vibrant platform for aspiring innovators to shape ideas that address the needs of the future.
@@ -62,26 +62,11 @@ const Ideate2024: React.FC = () => {
                 <EventCarousel />
             </div>
 
-            <div className="mt-5 grid grid-cols-1 md:grid-cols-3 w-full items-center justify-center content-center">
+            <div className="mt-5 w-full items-center justify-center content-center">
                 <div className="flex justify-center">
                     <img
-                        src="../info/EUREKA.png"
-                        className="m-5 w-[30vw] md:w-[15vw]"
-                    />
-                </div>
-                {/* <div className="hidden md:block">
-                    <DoughnutChart />
-                </div> */}
-                <div className="visible flex justify-center">
-                    <img
-                        src="../info/mobile_chart.png"
-                        className="w-[40vw]"
-                    />
-                </div>
-                <div className="flex justify-center">
-                    <img
-                        src="../info/IDEATE_2024.png"
-                        className="m-5 w-[30vw] md:w-[15vw]"
+                        src="../info/numbers.png"
+                        className="m-5 w-[30vw] md:w-[50vw]"
                     />
                 </div>
             </div>
