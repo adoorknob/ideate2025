@@ -65,7 +65,7 @@ const Prizes: React.FC = () => {
                     <div className="w-full grid md:justify-start justify-end">
                         <div className="min-h-[8vw]" />
                         <img 
-                            src="../prizes/most_sustainable.png"
+                            src="../prizes/most_innovative.png"
                             className="w-[30vw] md:w-[20vw] justify-self-center"
                         />
                     </div>
