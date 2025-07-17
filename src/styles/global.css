@@ -9,6 +9,99 @@
   font-weight: 900;
 }
 
+.title-text {
+  font-weight: 800;       
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.875rem;    
+}
+
+.title-single {
+  height: 1.5rem;
+}
+
+.title-firsttext {
+  position: absolute;
+  height: auto;
+}
+
+.title-subtext {
+  position: absolute;
+  top: 1.5rem;  
+  left: 3rem;   
+  height: auto;
+}
+
+@media (min-width: 640px) {  /* sm */
+  .title-text {
+    font-size: 2rem;
+  }
+  .title-subtext {
+    top: 1.6rem;     
+    left: 5rem;     
+  }
+}
+
+@media (min-width: 768px) {  /* md */
+  .title-text {
+    font-size: 3rem;
+    height: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .title-subtext {
+    top: 2.3rem;     
+    left: 5rem;     
+  }
+}
+
+@media (min-width: 1024px) {  /* lg */
+  .title-text {
+    font-size: 3.75rem;
+    height: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .title-subtext {
+    top: 3rem;     
+    left: 7rem;     
+  }
+}
+
+@media (min-width: 1536px) {  /* 2xl */
+  .title-text {
+    font-size: 4.5rem;
+    height: 10rem;
+  }
+  .title-single {
+    height: 5rem;
+  }
+  .title-subtext {
+    top: 3.75rem;     
+    left: 10rem;  
+  }
+}
+
+/* lightbulb pulse */
+@keyframes custom-pulse {
+  0%, 100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.3;  /* Change this to control how dim the pulse gets */
+  }
+}
+
+.custom-pulse {
+  animation: custom-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

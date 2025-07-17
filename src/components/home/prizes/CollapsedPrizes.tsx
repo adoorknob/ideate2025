@@ -8,18 +8,18 @@ import {
 
 const Prizes: React.FC = () => {
     return (
-        <div className="bg-inherit flex flex-col items-center justify-center text-white text-base mx-5 lg:mx-20 mt-20">
-            <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-9xl font-extrabold uppercase">
+        <div className="bg-inherit flex flex-col items-center justify-center text-white text-base mx-5 lg:mx-20">
+            <div className="title-text">
                 prizes:
             </div>
 
             <div>
                 {/* desktop prizes */}
                 <img src="../prizes/collapsed.png"
-                    className="my-10 hidden sm:block"/>
+                    className="hidden sm:block"/>
 
                 {/* mobile prizes */}
-                <div className="flex flex-col items-center justify-center">
+                <div className="sm:hidden flex flex-col items-center justify-center">
                     <img
                         src="../prizes/top3.png"
                         className="w-[60vw] m-5"

@@ -81,12 +81,12 @@ const Timeline : React.FC = () => {
     }, []);
 
     return (
-        <div ref={targetRef} className="text-white mx-10 lg:mx-20 2xl:mx-40 mt-20 flex flex-col items-center justify-center text-sm lg:text-xl">
-            <div className="relative text-3xl lg:text-7xl 2xl:text-9xl font-extrabold uppercase w-full text-left p-5 pb-10 lg:p-10 lg:pb-20 2xl:p-20 2xl:pb-30">
-                <div>
+        <div ref={targetRef} className="text-white mx-10 lg:mx-20 2xl:mx-40 mt-10 flex flex-col items-center justify-center text-sm lg:text-xl">
+            <div className="title-text">
+                <div className="title-firsttext">
                     What To
                 </div>
-                <div className="absolute top-11 left-20 lg:top-25 lg:left-50 2xl:top-45 2xl:left-86">
+                <div className="title-subtext">
                     Expect
                 </div>
             </div>

@@ -69,19 +69,18 @@ const faqData = [
 
 const FAQ: React.FC = () => {
     return (
-        <div className="bg-inherit items-center justify-center text-white text-xl px-15 md:px-20 lg:px-50 2xl:px-70 pt-20">
-            <div className="uppercase text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-9xl font-extrabold py-10">
+        <div className="bg-inherit items-center justify-center text-white text-xl px-15 md:px-20 lg:px-50 2xl:px-70 pt-10">
+          <div className="title-text title-single">
                 faq
-            </div>
-
-            <Accordion className="bg-gray-100/10 px-5 rounded-xl" type="single" collapsible>
+          </div>
+          <Accordion className="bg-gray-100/10 px-5 rounded-xl" type="single" collapsible>
             {faqData.map((item, index) => (
-                <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger className="text-sm sm:text-lg md:text-xl lg:text-2xl 2xl:text-4xl">{item.question}</AccordionTrigger>
-                <AccordionContent className="text-justify text-xs sm:text-base md:text-lg lg:text-xl 2xl:text-3xl">{item.answer}</AccordionContent>
-                </AccordionItem>
-            ))}
-            </Accordion>
+              <AccordionItem key={index} value={`item-${index}`}>
+              <AccordionTrigger className="text-sm sm:text-lg md:text-xl lg:text-2xl 2xl:text-4xl">{item.question}</AccordionTrigger>
+              <AccordionContent className="text-justify text-xs sm:text-base md:text-lg lg:text-xl 2xl:text-3xl">{item.answer}</AccordionContent>
+              </AccordionItem>
+          ))}
+          </Accordion>
         </div>
     )
 }
