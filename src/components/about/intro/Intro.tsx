@@ -4,8 +4,6 @@ import { OrganiserCarousel } from "../OrganiserCarousel"
 const Intro: React.FC = () => {
     return (
         <div className="flex flex-col items-center justify-center text-white text-base pt-20 px-15 md:px-20 lg:px-50">
-            <div className="bg-gray-100/10 h-1 w-full mb-10 sm:mb-15"/>
-
             <div className="relative text-3xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-9xl uppercase font-extrabold w-full h-10 sm:h-20 2xl:h-50">
                 <div>who</div>
                 <div className="absolute top-7 left-8 sm:top-10 sm:left-4/20 md:top-12 md:left-3/20 lg:top-14 lg:left-1/11 2xl:top-25 text-nowrap">are we?</div>

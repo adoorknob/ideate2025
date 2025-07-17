@@ -19,7 +19,7 @@ import Sponsor from '../../components/home/sponsor/Sponsor';
 import Theme from '../../components/home/theme/Theme';
 import Judges from '../../components/home/judges/Judges';
 import Mentors from '../../components/home/mentors/Mentors';
-// import Prizes from '../../components/home/prizes/Prizes';
+import AboutIDEATE from '../../components/home/aboutIDEATE/ideate2024'
 import Prizes from '@/components/home/prizes/CollapsedPrizes';
 
 import RegisterNow from '../../components/home/registerNow/RegisterNow';
@@ -33,11 +33,9 @@ import RegisterNow from '../../components/home/registerNow/RegisterNow';
 		<section id="hero">
 			<Hero />
 		</section>
-		<section id="register-now">
-			<RegisterNow isRegistrationOpen={true} client:load/>
-		</section>
 		<section id="what-is-ideate">
 			<WhatIsIdeate />
+			<AboutIDEATE client:load/>
 		</section>
 		<!-- <section id="theme">
 			<Theme />
@@ -48,6 +46,9 @@ import RegisterNow from '../../components/home/registerNow/RegisterNow';
 		<section id="mentors">
 			<Mentors />
 		</section> -->
+		<section id="register-now">
+			<RegisterNow isRegistrationOpen={true} client:load/>
+		</section>
 		<section id="prizes">
 			<Prizes client:load/>
 		</section>

@@ -14,8 +14,25 @@ const Prizes: React.FC = () => {
             </div>
 
             <div>
+                {/* desktop prizes */}
                 <img src="../prizes/collapsed.png"
-                    className="my-10"/>
+                    className="my-10 hidden sm:block"/>
+
+                {/* mobile prizes */}
+                <div className="flex flex-col items-center justify-center">
+                    <img
+                        src="../prizes/top3.png"
+                        className="w-[60vw] m-5"
+                    />
+                    <img
+                        src="../prizes/all_semis.png"
+                        className="w-[50vw] m-5"
+                    />
+                    <img
+                        src="../prizes/among_semis.png"
+                        className="w-[50vw] m-5"
+                    />
+                </div>
             </div>
 
             <div className="text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-3xl mt-3 md:mt-5 mb-10 ">
