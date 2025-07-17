@@ -37,7 +37,7 @@ const TimelineListItem : React.FC<timelineItemProps> = ({ title, date, descripti
                 <div className="grid grid-cols-9 group">
                     <div className="col-span-8">
                         <p className="outlined-text uppercase text-base lg:text-xl 2xl:text-3xl">{date}</p>
-                        <h5 className="uppercase font-semibold text-xl lg:text-2xl 2xl:text-4xl mb-2 leading-5 -mt-2">{title}</h5>
+                        <h5 className="uppercase font-semibold text-xl lg:text-2xl 2xl:text-4xl mb-2 leading-tight -mt-2">{title}</h5>
                         <p className="2xl:text-2xl">{description}</p>
                     </div>
 
