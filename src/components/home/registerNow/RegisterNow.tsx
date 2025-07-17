@@ -12,7 +12,7 @@ const RegisterNow: React.FC<RegisterNowProps> = ({ isRegistrationOpen }) => {
             <div className="w-full h-auto">
                 <img 
                     src={ isRegistrationOpen ? "../register_now/text_open.png" : "../register_now/text_opensSoon.png"}
-                    className={`absolute -translate-y-1/2 -translate-x-2/5 md:-translate-x-1/2
+                    className={`absolute -translate-y-50 md:-translate-y-4/5 -translate-x-2/5 md:-translate-x-1/2 
                                 ${ isRegistrationOpen ? `left-3/7 md:left-3/8 w-[70vw] md:w-[50vw] lg:w-[40vw]`
                                                      : `left-2/5 w-[80vw] md:w-[60vw]`} h-auto`
                                 }
@@ -24,7 +24,7 @@ const RegisterNow: React.FC<RegisterNowProps> = ({ isRegistrationOpen }) => {
                     onMouseLeave={() => setHovered(false)}
                     href="https://forms.office.com/r/jVt88zsPrV"
                 >
-                    <div className="hidden md:block absolute translate-y-1/2 left-1/2 left-3/5 translate-y-1/3 w-[25vw] lg:w-[20vw] h-auto">
+                    <div className="absolute left-3/5 md:top-3/7 md:left-5/8 w-[30vw] md:w-[25vw] lg:w-[20vw] h-auto">
                         <img
                             src="../register_now/web_reg_button.png"
                             className={`absolute`}
@@ -37,10 +37,10 @@ const RegisterNow: React.FC<RegisterNowProps> = ({ isRegistrationOpen }) => {
                     </div>
                     
                     {/* MOBILE */}
-                    <img
+                    {/* <img
                         src="../register_now/mobile_reg_button.png"
-                        className={`absolute top-45 left-1/2 md:left-2/3 translate-y-1/3 w-[30vw] h-auto md:hidden`}
-                    />
+                        className={`absolute top-50 left-1/2 md:left-2/3 translate-y-1/3 w-[30vw] h-auto md:hidden`}
+                    /> */}
                 </a>
                 :
                 <img
