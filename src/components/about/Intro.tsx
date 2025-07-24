@@ -25,7 +25,7 @@ const Intro: React.FC = () => {
             </div>
 
             <div className="mt-5 sm:mt-10 text-justify">
-                <div className="w-full text-sm sm:text-lg lg:text-xl 2xl:text-3xl mb-10">
+                <div className="w-full normal-text mb-10">
                     The iDP Students’ Club strives to build a vibrant community of aspiring engineers, designers, innovators, 
                     and entrepreneurs. We aim to enrich the iDP and NUS students’ experience by organising social events, 
                     professional development workshops, internship opportunities, and publicity campaigns.

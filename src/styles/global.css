@@ -9,6 +9,10 @@
   font-weight: 900;
 }
 
+.normal-text {
+  @apply font-normal text-sm sm:text-lg lg:text-xl 2xl:text-3xl;
+}
+
 .title-text {
   font-weight: 800;       
   position: relative;

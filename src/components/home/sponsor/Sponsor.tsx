@@ -12,7 +12,16 @@ const Sponsor: React.FC = () => {
                         organised by:
                     </div>
                 </div>
-                <div className="w-full flex flex-col md:grid md:grid-cols-2 content-center items-center justify-between bg-white rounded-3xl">
+
+                <div className="w-full normal-text text-right italic">
+                    CDE Research and Technology Office
+                    <br />
+                    NUS Enterprise
+                    <br />
+                    CDE Innovation and Design Programme Students' Club
+                </div>
+
+                {/* <div className="w-full flex flex-col md:grid md:grid-cols-2 content-center items-center justify-between bg-white rounded-3xl">
                     <img 
                         src="../sponsors/cde_logo.png"
                         className="w-[50vw] sm:w-[40vw] md:w-[25vw] m-10 self-center justify-self-center"
@@ -25,7 +34,7 @@ const Sponsor: React.FC = () => {
                         src="../sponsors/idpsc.avif"
                         className="w-[25vw] sm:w-[20vw] md:w-[15vw] m-5 self-center justify-self-center col-span-2"
                     />
-                </div>
+                </div> */}
             </div>
             {/* supported by */}
             {/* <div className="uppercase font-bold m-10 sm:m-20">

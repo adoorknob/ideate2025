@@ -11,7 +11,7 @@ const Ideate2024: React.FC = () => {
 
             {/* ideate 2024 info */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-15">
-                <div className="col-span-1 text-justify text-sm sm:text-lg lg:text-xl 2xl:text-3xl"> 
+                <div className="col-span-1 text-justify normal-text"> 
                     IDEATE is the flagship innovation makerthon jointly organised by the College of Design and Engineering
                     (CDE) Office of Research and Technology, CDE Innovation Design and Programme Student Club (iDPSC) and 
                     NUS Enterprise at the National University of Singapore (NUS). IDEATE is a merger of two highly successful 
