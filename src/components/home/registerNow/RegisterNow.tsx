@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import RegistrationBulb from "./RegistrationBulb";
 
 type RegisterNowProps = {
     isRegistrationOpen: boolean;
@@ -18,30 +19,9 @@ const RegisterNow: React.FC<RegisterNowProps> = ({ isRegistrationOpen }) => {
                                 }
                 />
                 { isRegistrationOpen ? 
-                <a
-                    className="w-fit h-fit"
-                    onMouseEnter={() => setHovered(true)}
-                    onMouseLeave={() => setHovered(false)}
-                    href="https://forms.office.com/r/jVt88zsPrV"
-                >
-                    <div className="absolute left-3/5 md:top-3/7 md:left-5/8 w-[30vw] md:w-[25vw] lg:w-[20vw] h-auto">
-                        <img
-                            src="../register_now/web_reg_button.png"
-                            className={`absolute`}
-                        />
-                        
-                        <img
-                            src="../register_now/lit_bulb.png"
-                            className={`absolute transition-opacity ${hovered? "opacity-100":"custom-pulse"}`}
-                        />
-                    </div>
-                    
-                    {/* MOBILE */}
-                    {/* <img
-                        src="../register_now/mobile_reg_button.png"
-                        className={`absolute top-50 left-1/2 md:left-2/3 translate-y-1/3 w-[30vw] h-auto md:hidden`}
-                    /> */}
-                </a>
+                <div className="absolute left-3/5 md:top-3/7 md:left-5/8 w-[30vw] md:w-[25vw] lg:w-[20vw] h-auto">
+                    <RegistrationBulb />
+                </div>
                 :
                 <img
                     src="../register_now/unlit_bulb.png"
