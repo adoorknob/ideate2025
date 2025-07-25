@@ -37,9 +37,9 @@ const Hero: React.FC<HeroProps> = ({ isRegistrationOpen }) => {
                 />
                 <div className="
                             absolute
-                            bottom-[14%] -right-[15%]
+                            -bottom-[15%] right-0 sm:bottom-[14%] sm:-right-[15%]
                             text-white font-extrabold uppercase
-                            text-3xl">
+                            text-base sm:text-2xl md:text-2xl">
                     <a 
                         className="underline hover:text-blue-300 cursor-pointer"
                         href="https://forms.office.com/r/jVt88zsPrV">
