@@ -11,7 +11,7 @@ const faqData = [
     question: "Who can participate in IDEATE 2025?",
     answer: (
       <span>
-        IDEATE 2025 is open to University students from all disciplines and years of study.
+        IDEATE 2025 is open to NUS undergraduate students from all disciplines and years of study.
       </span>
     ),
   },
@@ -51,7 +51,7 @@ const faqData = [
     question:"What are the compulsory workshops?",
     answer: (
         <div>
-            Compulsory workshops incldude: <br />
+            Compulsory workshops include: <br />
             <ul className="list-disc list-inside">
                 <li>Innovation Design Workshop - 16th August 2025</li>
                 <li>Building the Innovation Mindset - 20th August 2025</li>

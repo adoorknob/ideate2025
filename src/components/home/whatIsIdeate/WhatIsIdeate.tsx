@@ -15,10 +15,12 @@ const WhatIsIdeate: React.FC = () => {
                 <div className="col-span-2 normal-text text-left">
                     <p className="text-justify">
                         IDEATE isn’t just a competition—it’s a launchpad for innovative solutions with real-world potential.
-                        Open to <span className="font-bold">all disciplines</span>, this challenge brings together passionate teams who dare to imagine, build, and solve. 
+                        Open to <span className="font-bold">all NUS students</span>, this challenge brings together passionate 
+                        teams who dare to imagine, build, and solve. 
                         You bring the idea—we provide the space to explore it, question it, build it, and bring it to life. 
                         <br />
                         <br />
+                        With an <span className="font-bold">Open Theme</span>, IDEATE welcome bold ideas from all disciplines.
                         Sign up as <span className="font-bold">individuals</span> or <span className="font-bold">teams of 3-5</span> {" "}  
                         and pitch your ideas for a chance to be one of the <span className="font-bold">16 semi-finalist teams</span>.
                     </p>

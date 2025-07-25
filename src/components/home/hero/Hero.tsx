@@ -4,7 +4,7 @@ import RegistrationBulb from "../registerNow/RegistrationBulb"
 const Hero: React.FC = () => {
     return (
         <div className="bg-inherit flex items-center justify-center text-black text-base min-h-screen">
-            <div className="relative w-[70vw] md:w-[50vw] aspect-[1/1]">
+            <div className="relative w-[70vw] md:w-[45vw] aspect-[1/1]">
                 <div className="
                             absolute 
                             w-22/100 
