@@ -84,10 +84,10 @@ const Timeline : React.FC = () => {
         <div ref={targetRef} className="text-white mx-10 lg:mx-20 2xl:mx-40 mt-10 flex flex-col items-center justify-center text-sm lg:text-xl">
             <div className="title-text">
                 <div className="title-firsttext">
-                    What To
+                    Key Dates
                 </div>
                 <div className="title-subtext">
-                    Expect
+                    and milestones
                 </div>
             </div>
             <div className="relative">

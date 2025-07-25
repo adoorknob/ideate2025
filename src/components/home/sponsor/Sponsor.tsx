@@ -14,11 +14,11 @@ const Sponsor: React.FC = () => {
                 </div>
 
                 <div className="w-full normal-text text-right italic">
+                    CDE Innovation and Design Programme Students' Club
+                    <br />
                     CDE Research and Technology Office
                     <br />
                     NUS Enterprise
-                    <br />
-                    CDE Innovation and Design Programme Students' Club
                 </div>
 
                 {/* <div className="w-full flex flex-col md:grid md:grid-cols-2 content-center items-center justify-between bg-white rounded-3xl">

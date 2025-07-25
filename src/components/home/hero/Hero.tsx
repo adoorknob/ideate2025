@@ -35,6 +35,17 @@ const Hero: React.FC<HeroProps> = ({ isRegistrationOpen }) => {
                     src="../logo/logo_wo_bulb.png" 
                     className="absolute top-0 left-0 w-full h-full object-contain"
                 />
+                <div className="
+                            absolute
+                            bottom-[14%] -right-[15%]
+                            text-white font-extrabold uppercase
+                            text-3xl">
+                    <a 
+                        className="underline hover:text-blue-300 cursor-pointer"
+                        href="https://forms.office.com/r/jVt88zsPrV">
+                        Register now
+                    </a>
+                </div>
             </div>
         </div>
     )

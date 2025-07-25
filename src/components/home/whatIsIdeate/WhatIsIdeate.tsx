@@ -5,10 +5,10 @@ const WhatIsIdeate: React.FC = () => {
         <div className="bg-inherit flex flex-col items-center text-white justify-center w-full text-base px-10 sm:px-20 xl:px-30">
             <div className="title-text">
                 <p className="title-firsttext">
-                    What is
+                    What to 
                 </p>
                 <p className="title-subtext">
-                    IDEATE?
+                    expect in IDEATE
                 </p>
             </div>
             <div className="w-full  md:grid md:grid-cols-3 gap-4 gap-y-10">
