@@ -7,7 +7,7 @@ type HeroProps = {
 
 const Hero: React.FC<HeroProps> = ({ isRegistrationOpen }) => {
     return (
-        <div className="bg-inherit flex items-center justify-center text-black text-base min-h-screen">
+        <div className="bg-inherit flex items-center justify-center text-black text-base min-h-screen pt-20">
             <div className="relative w-[70vw] md:w-[45vw] aspect-[1/1]">
             { isRegistrationOpen ? 
                 <div className="

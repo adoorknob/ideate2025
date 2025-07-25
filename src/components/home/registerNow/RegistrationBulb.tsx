@@ -4,7 +4,7 @@ const RegistrationBulb: React.FC = () => {
     const [hovered, setHovered] = useState(false);
     return (
         <a
-            className="w-fit h-fit"
+            className="w-fit h-fit cursor-pointer"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
             href="https://forms.office.com/r/jVt88zsPrV"

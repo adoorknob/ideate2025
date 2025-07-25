@@ -11,7 +11,12 @@ const RegisterNow: React.FC<RegisterNowProps> = ({ isRegistrationOpen }) => {
             { isRegistrationOpen ? 
             <div className="w-full h-auto">
                 <a 
-                    className="absolute -translate-y-50 md:-translate-y-4/5 -translate-x-2/5 md:-translate-x-1/2 left-3/7 md:left-3/8 w-[70vw] md:w-[50vw] lg:w-[40vw] h-auto"
+                    className="
+                            absolute 
+                            -translate-y-50 md:-translate-y-4/5 -translate-x-2/5 md:-translate-x-1/2 
+                            left-3/7 md:left-3/8 
+                            w-[70vw] md:w-[50vw] lg:w-[40vw] h-auto
+                            cursor-pointer"
                     href="https://forms.office.com/r/jVt88zsPrV">
                     <img 
                         src="../register_now/text_open.png"
