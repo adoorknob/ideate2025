@@ -49,14 +49,14 @@ const Header: React.FC = () => {
           )}
         >
           {/* Routing done by putting url in route */}
-          {/* <HeaderButton buttonName="Home" route="/" onClick={turnOffSidebar}/>
-          <HeaderButton buttonName="About" route="/about" onClick={turnOffSidebar}/>
-          <HeaderButton buttonName="Schedule" route="/schedule" onClick={turnOffSidebar}/>
-          <HeaderButton buttonName="FAQ" route="/faq" onClick={turnOffSidebar}/>         */}
-          <HeaderButton buttonName="Home" route="/a1b2c3d4/" onClick={turnOffSidebar}/>
+          <HeaderButton buttonName="Home" route="/" onClick={turnOffSidebar}/>
+          <HeaderButton buttonName="Contact Us" route="/about" onClick={turnOffSidebar}/>
+          <HeaderButton buttonName="Timeline" route="/schedule" onClick={turnOffSidebar}/>
+          <HeaderButton buttonName="FAQ" route="/faq" onClick={turnOffSidebar}/>        
+          {/* <HeaderButton buttonName="Home" route="/a1b2c3d4/" onClick={turnOffSidebar}/>
           <HeaderButton buttonName="Timeline" route="/a1b2c3d4/schedule" onClick={turnOffSidebar}/>
           <HeaderButton buttonName="Contact Us" route="/a1b2c3d4/about" onClick={turnOffSidebar}/>
-          <HeaderButton buttonName="FAQ" route="/a1b2c3d4/faq" onClick={turnOffSidebar}/>        
+          <HeaderButton buttonName="FAQ" route="/a1b2c3d4/faq" onClick={turnOffSidebar}/>         */}
           {/* <HeaderButton buttonName="Submissions" route="/submissions" onClick={turnOffSidebar}/>  
           <HeaderButton buttonName="Resources" route="/resources" onClick={turnOffSidebar}/>   */}
         </nav>
