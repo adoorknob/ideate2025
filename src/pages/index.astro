@@ -1,9 +1,66 @@
 ---
-import TempLayout from "../layouts/TempLayout.astro"
-import TempPage from "@/components/TempPage";
+// import Layout from '../layouts/Layout.astro';
+
+// import Hero from '../components/home/hero/Hero';
+// import WhatIsIdeate from '../components/home/whatIsIdeate/WhatIsIdeate';
+// import Sponsor from '../components/home/sponsor/Sponsor';
+// import Theme from '../components/home/theme/Theme';
+// import Judges from '../components/home/judges/Judges';
+// import Mentors from '../components/home/mentors/Mentors';
+// import Prizes from '../components/home/prizes/Prizes';
+
+// import RegisterNow from '../components/home/registerNow/RegisterNow';
+
+import Layout from '../layouts/Layout.astro';
+
+import Hero from '../components/home/hero/Hero';
+import WhatIsIdeate from '../components/home/whatIsIdeate/WhatIsIdeate';
+import Sponsor from '../components/home/sponsor/Sponsor';
+import Theme from '../components/home/theme/Theme';
+import Judges from '../components/home/judges/Judges';
+import Mentors from '../components/home/mentors/Mentors';
+import AboutIDEATE from '../components/home/aboutIDEATE/ideate2024'
+import Prizes from '@/components/home/prizes/CollapsedPrizes';
+import Highlights from '../components/home/ideateHighlights/ideateHighlights'
+
+import RegisterNow from '../components/home/registerNow/RegisterNow';
+
+const isRegistrationOpen = true;
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-
-<TempLayout>
-    <TempPage />
-</TempLayout>
+<Layout>
+	<main class="items-center justify-center px-6 lg:px-12 text-center text-black text-base w-screen">
+		<section id="hero">
+			<Hero isRegistrationOpen={isRegistrationOpen} client:load/>
+		</section>
+		<!-- <section id="register-now">
+			<RegisterNow isRegistrationOpen={isRegistrationOpen} client:load/>
+		</section> -->
+		<section id="what-is-ideate">
+			<AboutIDEATE client:load/>
+			<WhatIsIdeate />
+		</section>
+		<!-- <section id="theme">
+			<Theme />
+		</section> -->
+		<!-- <section id="judges">
+			<Judges />
+		</section>
+		<section id="mentors">
+			<Mentors />
+		</section> -->
+		<section id="prizes">
+			<Prizes client:load/>
+		</section>
+		<section id="highlights">
+			<Highlights />
+		</section>
+		<section id="sponsor">
+			<Sponsor />
+		</section>
+	</main>
+	<!-- <TempPage /> -->
+</Layout>
