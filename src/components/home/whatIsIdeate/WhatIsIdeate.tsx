@@ -3,12 +3,23 @@ import React from "react"
 const WhatIsIdeate: React.FC = () => {
     return (
         <div className="bg-inherit flex flex-col items-center text-white justify-center w-full text-base px-10 sm:px-20 xl:px-30">
-            <div className="title-text">
+            <div className="title-text !min-h-[5rem]">
                 <p className="title-firsttext">
                     What to 
                 </p>
-                <p className="title-subtext">
+                <p className="hidden md:block title-subtext">
                     expect in IDEATE
+                </p>
+                <p className="md:hidden title-subtext">
+                    expect
+                </p>
+                <p className="
+                                md:hidden
+                                title-subtext 
+                                !top-[3rem] !left-[2rem]
+                                sm:!top-[3.2rem] sm:!left-[4rem]
+                            ">
+                    in IDEATE
                 </p>
             </div>
             <div className="w-full  md:grid md:grid-cols-3 gap-4 gap-y-10">
