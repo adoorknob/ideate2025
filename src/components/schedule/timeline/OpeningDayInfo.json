@@ -1,39 +1,41 @@
 [
     {
       "id": 1,
-      "timeStart": "0945",
-      "timeEnd": "1010",
+      "timeStart": "1000",
+      "timeEnd": "1030",
       "description": "Registration"
     },
     {
       "id": 2,
-      "timeStart": "1010",
+      "timeStart": "1030",
       "timeEnd": "1035",
-      "description": "Opening for IDEATE 2025"
+      "description": "IDEATE Launch"
     },
     {
       "id": 3,
       "timeStart": "1035",
       "timeEnd": "1040",
-      "description": "Speech by Guest of Honor"
+      "description": "Opening Speech by Dr Yen Shih-Cheng",
+      "subDescription": "Director, Engineering Design and Innovation Centre"
     },
     {
       "id": 4,
       "timeStart": "1040",
-      "timeEnd": "1110",
-      "description": "Introduction to Challenge"
+      "timeEnd": "1045",
+      "description": "Speech by Guest of Honor: Prof Silvija Gradečak-Garaj",
+      "subDescription": "Vice Dean, Research & Technology, College of Design and Engineering"
     },
     {
       "id": 5,
-      "timeStart": "1110",
-      "timeEnd": "1210",
-      "description": "Lunch and Networking"
+      "timeStart": "1045",
+      "timeEnd": "1130",
+      "description": "Introduction to Challenge"
     },
     {
       "id": 6,
-      "timeStart": "1210",
+      "timeStart": "1130",
       "timeEnd": "1230",
-      "description": "Move to studios"
+      "description": "Lunch and Networking"
     },
     {
       "id": 7,

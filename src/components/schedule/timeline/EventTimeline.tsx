@@ -5,9 +5,9 @@ export interface Activity {
     timeStart: string;
     timeEnd: string;
     description: string;
+    subDescription?: string;
     color?:boolean;
 };
-
 
 type timelineProps = {
   name: string;
@@ -42,8 +42,10 @@ const EventTimeline = ({ name, activities }: timelineProps) => {
                 <div className="absolute h-full left-1/2 transform -translate-x-1/2 w-1 2xl:w-2 bg-white rounded-md z-20" />
                 <div className="font-normal w-3/4 z-30">
                     {activities.map(item => (
-                        <div key={item.id} className="h-16 grid grid-cols-5 m-5 sm:m-20">
-                            <div className="col-span-2 flex flex-col justify-center items-center w-full text-base xs:text-sm md:text-xl lg:text-2xl 2xl:text-4xl whitespace-nowrap">
+                        <div key={item.id} className="min-h-16 grid grid-cols-5 m-5 sm:m-20">
+                            <div className="col-span-2 flex flex-col justify-center items-center w-full 
+                                            text-[12px] md:text-xl lg:text-xl 2xl:text-3xl 
+                                            whitespace-nowrap">
                                 {item.timeStart} - {item.timeEnd}
                             </div>
 
@@ -56,9 +58,17 @@ const EventTimeline = ({ name, activities }: timelineProps) => {
                                 />
                             }
                             </div>
-                            <p className="col-span-2 text-base xs:text-sm md:text-2xl lg:text-3xl 2xl:text-5xl flex items-center">
-                                {item.description}
-                            </p>
+                            <div className="col-span-2 leading-tight flex flex-col justify-center">
+                                <p className="
+                                                text-[12px] md:text-xl lg:text-2xl 2xl:text-4xl">
+                                    {item.description}
+                                </p>
+                                <p className="
+                                                text-[8px] md:text-sm lg:text-base 2xl:text-xl
+                                                text-gray-200">
+                                    {item.subDescription}
+                                </p>
+                            </div>
                         </div>
                     ))}
                 </div>
