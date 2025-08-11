@@ -17,7 +17,7 @@ const timelineData = [
     },
     {
         title: 'Preliminary Design Submission',
-        date: '3rd Sep',
+        date: '29th Aug',
         description: 'Submit a video recording of your idea for judges to review',
         link: null
     },
