@@ -35,7 +35,7 @@ const timelineData = [
     },
     {
         title: 'Mentor Check-in',
-        date: '2nd Sep to 5th Oct',
+        date: '29th Sep to 5th Oct',
         description: 'Consultations with industrial mentors',
         link: null
     },
