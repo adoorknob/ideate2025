@@ -2,7 +2,7 @@ import React from "react"
 
 const EntreWorkshop: React.FC = () => {
     return (
-        <div className="flex flex-col items-center text-white font-extrabold px-4 lg:px-16 pt-8 pb-12">
+        <div className="flex flex-col items-center text-white font-extrabold px-4 lg:px-16 pt-8 pb-12 px-10 sm:px-20 xl:px-30">
             
             {/* Heading */}
             <p className="uppercase pb-4 lg:pb-8 text-center text-2xl md:text-5xl lg:text-7xl 2xl:text-8xl">
@@ -10,10 +10,10 @@ const EntreWorkshop: React.FC = () => {
             </p>
 
             {/* Image + text container */}
-            <div className="flex flex-col lg:flex-row w-full font-normal items-center lg:items-center gap-6">
+            <div className="flex flex-col md:flex-row w-full font-normal items-center lg:items-center gap-6">
                 
                 {/* Image */}
-                <div className="w-full lg:w-1/3 flex-shrink-0">
+                <div className="w-full md:w-1/3 flex-shrink-0">
                     <img    
                         src="../timeline/entre_workshop.jpg"
                         className="w-full h-full object-cover"
