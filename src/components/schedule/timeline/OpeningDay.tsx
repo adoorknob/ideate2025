@@ -16,7 +16,6 @@ const OpeningDay: React.FC = () => {
                     @LT7A, NUS Engineering
                 </p>
             </div>
-
             <EventTimeline activities={data}/>
         </div>
 

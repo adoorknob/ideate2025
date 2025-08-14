@@ -10,7 +10,7 @@ const timelineData = [
         link: 'opening-day'
     },
     {
-        title: 'Building the Innovation Mindset',
+        title: 'Building an Innovation Mindset',
         date: '20th Aug',
         description: 'Learn about the fundamentals of starting a business through this workshop', 
         link: 'entre-workshop'
