@@ -35,7 +35,7 @@ const Hero: React.FC<HeroProps> = ({ isRegistrationOpen }) => {
                     src="../logo/logo_wo_bulb.png" 
                     className="absolute top-0 left-0 w-full h-full object-contain"
                 />
-                <div className="
+                {/* <div className="
                             absolute
                             -bottom-[15%] right-0 sm:bottom-[14%] sm:-right-[15%]
                             text-white font-extrabold uppercase
@@ -45,7 +45,7 @@ const Hero: React.FC<HeroProps> = ({ isRegistrationOpen }) => {
                         href="https://forms.office.com/r/jVt88zsPrV">
                         Register now
                     </a>
-                </div>
+                </div> */}
             </div>
         </div>
     )
