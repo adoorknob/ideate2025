@@ -29,15 +29,12 @@ const pickShape = (item: Activity) => {
 
 
 
-const EventTimeline = ({ name, activities }: timelineProps) => {
+const EventTimeline = ({activities}: timelineProps) => {
 
 
     return (
         <div className="flex flex-col items-center justify-center gap-x-4 text-2xl md:text-5xl lg:text-7xl 2xl:text-8xl lg:pt-16 pt-8 pb-12 min-h-[50vh] gap-y-8 px-4
         lg:px-16 text-white font-extrabold">
-            <p className="uppercase pt-20 pb-4 lg:pb-8">
-                {name}
-            </p>
             <div className="relative flex flex-col items-center justify-center">
                 <div className="absolute h-full left-1/2 transform -translate-x-1/2 w-1 2xl:w-2 bg-white rounded-md z-20" />
                 <div className="font-normal w-3/4 z-30">

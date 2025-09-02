@@ -10,7 +10,7 @@ const EntreWorkshop: React.FC = () => {
             </p>
 
             {/* Image + text container */}
-            <div className="flex flex-col md:flex-row w-full font-normal items-center lg:items-center gap-6">
+            <div className="flex flex-col md:flex-row w-full font-normal items-center gap-6">
                 
                 {/* Image */}
                 <div className="w-full md:w-1/3 flex-shrink-0">
