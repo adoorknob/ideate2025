@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "timeStart": "1200",
+      "timeEnd": "1400",
+      "description": "Semi-finals & Voting"
+    },
+    {
+      "id": 2,
+      "timeStart": "1400",
+      "timeEnd": "1515",
+      "description": "Finals"
+    },
+    {
+      "id": 3,
+      "timeStart": "1515",
+      "timeEnd": "1600",
+      "description": "Lucky Draw & Prize Presentation"
+    }
+]
+  

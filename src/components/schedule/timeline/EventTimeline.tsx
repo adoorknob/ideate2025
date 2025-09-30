@@ -33,7 +33,7 @@ const EventTimeline = ({activities}: timelineProps) => {
 
 
     return (
-        <div className="flex flex-col items-center justify-center gap-x-4 text-2xl md:text-5xl lg:text-7xl 2xl:text-8xl lg:pt-16 pt-8 pb-12 min-h-[50vh] gap-y-8 px-4
+        <div className="flex flex-col w-full justify-center gap-x-4 text-2xl md:text-5xl lg:text-7xl 2xl:text-8xl lg:pt-16 pt-8 pb-12 min-h-[50vh] gap-y-8 px-4
         lg:px-16 text-white font-extrabold">
             <div className="relative flex flex-col items-center justify-center">
                 <div className="absolute h-full left-1/2 transform -translate-x-1/2 w-1 2xl:w-2 bg-white rounded-md z-20" />
