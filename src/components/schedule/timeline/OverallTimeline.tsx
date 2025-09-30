@@ -82,7 +82,7 @@ const timelineData = [
   },
   {
     title: 'Pitching Workshop',
-    date: '6th Oct',
+    date: '7th Oct',
   },
   {
     title: (
